@@ -1,0 +1,18 @@
+server:
+  #端口
+  port: 8081
+  servlet:
+    #上下文路径
+    context-path: /qz
+test:
+  jdbc:
+    users:
+      - id: 1
+        name: 乔治
+        age: 18
+      - id: 2
+        name: 汤姆
+        age: 28
+      - id: 3
+        name: 杰瑞
+        age: 8
