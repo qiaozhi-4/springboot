@@ -1,0 +1,50 @@
+server:
+  #端口
+  port: 8081
+#  servlet:
+    #上下文路径
+#    context-path: /qz
+
+# 配置JDBC
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 12345678
+
+  # 文件上传multipart配置（可以不用配置，都有默认配置）
+  servlet:
+    multipart:
+      location: ./
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+# 配置静态路径（默认为public/static路径）
+#  web:
+#    resources:
+#      static-locations: classpath:/public/, classpath:/static/
+
+# mybatis配置
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+  #配置别名（mapper.xml文件返回值类型就不需要写包，直接写user）
+  type-aliases-package: com.zking.entity
+  configuration:
+    map-underscore-to-camel-case: true # 下横线转驼峰
+
+# mybatis-plus的配置（和mybatis配置一致）
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.zking.entity
+  configuration:
+    map-underscore-to-camel-case: true # 下横线转驼峰
+
+# pagehelper配置
+pagehelper:
+  #  dialect:  # 数据库方言类型（得是类）
+  helper-dialect: mysql # 方言
+  reasonable: true # 负数默认转为第1页
+
+

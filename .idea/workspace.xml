@@ -4,25 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot1/springboot1/src/main/java/com/zking/springboot1/controller/MyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot1/springboot11/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot1/springboot11/src/main/java/com/zking/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot1/springboot11/src/main/java/com/zking/controller/MyController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot1/springboot11/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot2/src/main/java/com/zking/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot2/src/main/java/com/zking/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot2/src/main/java/com/zking/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot2/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zking/Main.java" afterDir="false" />
+    <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/mappers/IUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/static/head_big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/test/java/JobTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/test/java/MybatisPlusTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/test/java/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/App3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +57,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "import_schema_mapping": "<schema-mapping><databases><list><schema-mapping-item><source-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</source-data-source-id><source-path>schema/\"mydb\"</source-path><target-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</target-data-source-id><target-path>schema/\"mydb\"</target-path></schema-mapping-item></list></databases></schema-mapping>",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/user/train/java/springboot/springboot2/src/main/resources",
+    "last_opened_file_path": "D:/user/train/java/springboot/springboot3/src/main/java/com/zking",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,55 +67,75 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
     "show.run.dashboard.notification": "false",
     "spring.configuration.checksum": "16824c1ef33982c7ece8d0d251880d47"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\user\train\java\springboot\springboot2\src\main\resources" />
-      <recent name="D:\user\train\java\springboot\springboot22\src\main\resources" />
-      <recent name="D:\user\train\java\springboot\springboot22\src\main\java\com\zking" />
-      <recent name="D:\user\train\java\springboot\springboot1\springboot11\src\main\resources" />
+      <recent name="D:\user\train\java\springboot\springboot3\src\main\java\com\zking" />
+      <recent name="D:\user\train\java\springboot\springboot3\src\main\resources" />
+      <recent name="D:\user\train\java\springboot\springboot3\src\test\java" />
+      <recent name="D:\user\train\java\springboot\springboot3\src\main\java\com\zking\controller" />
+      <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\mappers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.zking.entity" />
       <recent name="com.zking" />
       <recent name="com.zking.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.App (2)">
-    <configuration name="App (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="springboot22" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Spring Boot.App3">
+    <configuration name="JobTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JobTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot2" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="JobTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JobTest" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ACTIVE_PROFILES" />
-      <module name="springboot11" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App" />
+    <configuration name="MybatisPlusTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MybatisPlusTest" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisPlusTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MybatisPlusTest" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zking.*" />
@@ -136,16 +155,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.JobTest.test1" />
+      <item itemvalue="JUnit.JobTest.test2" />
+      <item itemvalue="JUnit.MybatisPlusTest.test4" />
+      <item itemvalue="JUnit.MybatisPlusTest.test5" />
       <item itemvalue="Spring Boot.Springboot1Application" />
-      <item itemvalue="Spring Boot.App (2)" />
-      <item itemvalue="Spring Boot.App" />
-      <item itemvalue="Spring Boot.App (1)" />
+      <item itemvalue="Spring Boot.App3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.App (2)" />
-        <item itemvalue="Spring Boot.App (1)" />
-        <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Spring Boot.App3" />
+        <item itemvalue="JUnit.JobTest.test2" />
+        <item itemvalue="JUnit.JobTest.test1" />
+        <item itemvalue="JUnit.MybatisPlusTest.test5" />
+        <item itemvalue="JUnit.MybatisPlusTest.test4" />
       </list>
     </recent_temporary>
   </component>
@@ -160,8 +183,16 @@
       <workItem from="1655946818888" duration="9517000" />
       <workItem from="1655956928897" duration="593000" />
       <workItem from="1655957551143" duration="54000" />
-      <workItem from="1656002967736" duration="3394000" />
+      <workItem from="1656002967736" duration="13899000" />
     </task>
+    <task id="LOCAL-00001" summary="springboot3">
+      <created>1656071493685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656071493685</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +208,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="springboot3" />
+    <option name="LAST_COMMIT_MESSAGE" value="springboot3" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
