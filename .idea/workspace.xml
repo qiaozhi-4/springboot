@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/public/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/App4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/repository/IEmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/static/head_big.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/static/拉克丝狗年限定.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/test/java/JobTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/test/java/JpaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot4/src/test/java/RedisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot3/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,7 +191,7 @@
       <workItem from="1655957551143" duration="54000" />
       <workItem from="1656002967736" duration="21923000" />
       <workItem from="1656137440789" duration="11699000" />
-      <workItem from="1656205198261" duration="6319000" />
+      <workItem from="1656205198261" duration="6647000" />
     </task>
     <task id="LOCAL-00001" summary="springboot3">
       <created>1656071493685</created>
@@ -236,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656123444750</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="springboot3">
+      <created>1656212315777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656212315777</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
