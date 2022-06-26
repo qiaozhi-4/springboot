@@ -45,12 +45,4 @@ public class UserService extends ServiceImpl<IUserMapper, User> implements IUser
         }
         return null;
     }
-
-    //注册
-//    @Override
-//    public boolean update(User user) {
-//        return update(user);
-//    }
-
-
 }

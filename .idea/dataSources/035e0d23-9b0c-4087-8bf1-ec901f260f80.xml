@@ -1008,288 +1008,279 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="294" parent="277" name="lock1">
+    <table id="294" parent="277" name="employee">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="295" parent="277" name="order2">
+    <table id="295" parent="277" name="hibernate_sequence">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="296" parent="277" name="order3">
+    <table id="296" parent="277" name="lock1">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="297" parent="277" name="perm">
+    <table id="297" parent="277" name="order2">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="298" parent="277" name="pessimistic_lock">
+    <table id="298" parent="277" name="order3">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="299" parent="277" name="role">
+    <table id="299" parent="277" name="perm">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="300" parent="277" name="role_perm">
+    <table id="300" parent="277" name="pessimistic_lock">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="301" parent="277" name="student1">
+    <table id="301" parent="277" name="role">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="302" parent="277" name="student_day04">
+    <table id="302" parent="277" name="role_perm">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="303" parent="277" name="t_admin">
+    <table id="303" parent="277" name="student1">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="304" parent="277" name="t_order">
+    <table id="304" parent="277" name="student_day04">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="305" parent="277" name="t_user">
+    <table id="305" parent="277" name="t_admin">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="306" parent="277" name="t_work">
+    <table id="306" parent="277" name="t_order">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="307" parent="277" name="table_name">
+    <table id="307" parent="277" name="t_user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="308" parent="277" name="test">
+    <table id="308" parent="277" name="t_work">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="309" parent="277" name="user1">
+    <table id="309" parent="277" name="table_name">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="310" parent="277" name="user2">
+    <table id="310" parent="277" name="test">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="311" parent="277" name="user3">
+    <table id="311" parent="277" name="user1">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="312" parent="277" name="user_role">
+    <table id="312" parent="277" name="user2">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="313" parent="291" name="id">
+    <table id="313" parent="277" name="user3">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="314" parent="277" name="user_role">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="315" parent="291" name="id">
       <AutoIncrement>9</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="314" parent="291" name="username">
+    <column id="316" parent="291" name="username">
       <DataType>varchar(10)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="315" parent="291" name="password">
+    <column id="317" parent="291" name="password">
       <DataType>varchar(10)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="316" parent="291" name="money">
+    <column id="318" parent="291" name="money">
       <DataType>double|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="317" parent="291" name="PRIMARY">
+    <key id="319" parent="291" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="318" parent="292" name="id">
+    <column id="320" parent="292" name="id">
       <AutoIncrement>5</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="319" parent="292" name="NAME">
+    <column id="321" parent="292" name="NAME">
       <DataType>varchar(10)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="320" parent="292" name="teacher">
+    <column id="322" parent="292" name="teacher">
       <DataType>varchar(10)|0s</DataType>
       <Position>3</Position>
     </column>
-    <index id="321" parent="292" name="teacher">
+    <index id="323" parent="292" name="teacher">
       <ColNames>teacher</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="322" parent="292" name="PRIMARY">
+    <key id="324" parent="292" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="323" parent="293" name="id">
+    <column id="325" parent="293" name="id">
       <AutoIncrement>12</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="324" parent="293" name="name">
+    <column id="326" parent="293" name="name">
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="325" parent="293" name="content">
+    <column id="327" parent="293" name="content">
       <DataType>varchar(50)|0s</DataType>
       <DefaultExpression>&apos;这个星座很懒，什么也没留下。&apos;</DefaultExpression>
       <Position>3</Position>
     </column>
-    <key id="326" parent="293" name="PRIMARY">
+    <key id="328" parent="293" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="327" parent="294" name="id">
-      <AutoIncrement>3</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="328" parent="294" name="name">
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="329" parent="294" name="num">
-      <DataType>int|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="330" parent="294" name="version1">
-      <DataType>bigint|0s</DataType>
-      <DefaultExpression>1</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <key id="331" parent="294" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="332" parent="295" name="id">
-      <AutoIncrement>31</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="333" parent="295" name="user_id">
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="334" parent="295" name="info">
-      <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="335" parent="295" name="address">
-      <DataType>text|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="336" parent="295" name="price">
-      <DataType>double|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <key id="337" parent="295" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="338" parent="296" name="id">
-      <AutoIncrement>17</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="339" parent="296" name="user_id">
-      <Comment>用户的id</Comment>
-      <DataType>int|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="340" parent="296" name="info">
-      <Comment>订单信息</Comment>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="341" parent="296" name="address">
-      <Comment>订单地址</Comment>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="342" parent="296" name="price">
-      <Comment>订单金额</Comment>
-      <DataType>double|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <key id="343" parent="296" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="344" parent="297" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="345" parent="297" name="perm_name">
-      <Comment>权限名称</Comment>
-      <DataType>varchar(30)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="346" parent="297" name="description">
-      <Comment>描述</Comment>
-      <DataType>varchar(255)|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <key id="347" parent="297" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="348" parent="298" name="id">
+    <column id="329" parent="294" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="349" parent="298" name="name">
+    <column id="330" parent="294" name="age">
+      <DataType>int|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="331" parent="294" name="department">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="332" parent="294" name="name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>4</Position>
+    </column>
+    <column id="333" parent="294" name="salary">
+      <DataType>double|0s</DataType>
+      <Position>5</Position>
+    </column>
+    <key id="334" parent="294" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="335" parent="295" name="next_val">
+      <DataType>bigint|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="336" parent="296" name="id">
+      <AutoIncrement>3</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="337" parent="296" name="name">
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="350" parent="298" name="num">
+    <column id="338" parent="296" name="num">
       <DataType>int|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="351" parent="298" name="version1">
-      <DataType>mediumtext|0s</DataType>
+    <column id="339" parent="296" name="version1">
+      <DataType>bigint|0s</DataType>
+      <DefaultExpression>1</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
+    </column>
+    <key id="340" parent="296" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="341" parent="297" name="id">
+      <AutoIncrement>31</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="342" parent="297" name="user_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="343" parent="297" name="info">
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="344" parent="297" name="address">
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="345" parent="297" name="price">
+      <DataType>double|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <key id="346" parent="297" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="347" parent="298" name="id">
+      <AutoIncrement>17</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="348" parent="298" name="user_id">
+      <Comment>用户的id</Comment>
+      <DataType>int|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="349" parent="298" name="info">
+      <Comment>订单信息</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="350" parent="298" name="address">
+      <Comment>订单地址</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="351" parent="298" name="price">
+      <Comment>订单金额</Comment>
+      <DataType>double|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
     </column>
     <key id="352" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1297,13 +1288,13 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="353" parent="299" name="id">
-      <AutoIncrement>2</AutoIncrement>
+      <AutoIncrement>1</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="354" parent="299" name="role_name">
-      <Comment>角色名</Comment>
+    <column id="354" parent="299" name="perm_name">
+      <Comment>权限名称</Comment>
       <DataType>varchar(30)|0s</DataType>
       <Position>2</Position>
     </column>
@@ -1317,75 +1308,76 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="357" parent="300" name="role_id">
+    <column id="357" parent="300" name="id">
+      <AutoIncrement>2</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="358" parent="300" name="name">
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="359" parent="300" name="num">
+      <DataType>int|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="360" parent="300" name="version1">
+      <DataType>mediumtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <key id="361" parent="300" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="362" parent="301" name="id">
+      <AutoIncrement>2</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="363" parent="301" name="role_name">
+      <Comment>角色名</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="364" parent="301" name="description">
+      <Comment>描述</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <key id="365" parent="301" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="366" parent="302" name="role_id">
       <DataType>int|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="358" parent="300" name="perm_id">
+    <column id="367" parent="302" name="perm_id">
       <DataType>int|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="359" parent="301" name="id">
+    <column id="368" parent="303" name="id">
       <AutoIncrement>22</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="360" parent="301" name="name">
+    <column id="369" parent="303" name="name">
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="361" parent="301" name="age">
+    <column id="370" parent="303" name="age">
       <DataType>int|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
-      <Position>3</Position>
-    </column>
-    <key id="362" parent="301" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="363" parent="302" name="id">
-      <AutoIncrement>7</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="364" parent="302" name="name">
-      <DataType>varchar(10)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="365" parent="302" name="class_id">
-      <DataType>int|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <index id="366" parent="302" name="class_id">
-      <ColNames>class_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="367" parent="302" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="368" parent="303" name="id">
-      <AutoIncrement>2</AutoIncrement>
-      <Comment>管理员id</Comment>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="369" parent="303" name="name">
-      <Comment>管理员用户名</Comment>
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="370" parent="303" name="pass">
-      <Comment>管理员密码</Comment>
-      <DataType>varchar(30)|0s</DataType>
-      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <key id="371" parent="303" name="PRIMARY">
@@ -1394,46 +1386,43 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="372" parent="304" name="id">
-      <AutoIncrement>28</AutoIncrement>
+      <AutoIncrement>7</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="373" parent="304" name="uid">
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
+    <column id="373" parent="304" name="name">
+      <DataType>varchar(10)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="374" parent="304" name="wid">
+    <column id="374" parent="304" name="class_id">
       <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="375" parent="304" name="info">
-      <DataType>varchar(100)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
+    <index id="375" parent="304" name="class_id">
+      <ColNames>class_id</ColNames>
+      <Type>btree</Type>
+    </index>
     <key id="376" parent="304" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
     <column id="377" parent="305" name="id">
-      <AutoIncrement>864071682</AutoIncrement>
-      <Comment>用户id</Comment>
+      <AutoIncrement>2</AutoIncrement>
+      <Comment>管理员id</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="378" parent="305" name="username">
-      <Comment>用户名</Comment>
+    <column id="378" parent="305" name="name">
+      <Comment>管理员用户名</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="379" parent="305" name="password">
-      <Comment>用户密码</Comment>
+    <column id="379" parent="305" name="pass">
+      <Comment>管理员密码</Comment>
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
@@ -1444,116 +1433,118 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="381" parent="306" name="id">
+      <AutoIncrement>28</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="382" parent="306" name="uid">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="383" parent="306" name="wid">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="384" parent="306" name="info">
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <key id="385" parent="306" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="386" parent="307" name="id">
+      <AutoIncrement>864071682</AutoIncrement>
+      <Comment>用户id</Comment>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="387" parent="307" name="username">
+      <Comment>用户名</Comment>
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="388" parent="307" name="password">
+      <Comment>用户密码</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <key id="389" parent="307" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="390" parent="308" name="id">
       <AutoIncrement>87</AutoIncrement>
       <Comment>id</Comment>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="382" parent="306" name="name">
+    <column id="391" parent="308" name="name">
       <Comment>名字</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="383" parent="306" name="info">
+    <column id="392" parent="308" name="info">
       <Comment>信息</Comment>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="384" parent="306" name="time">
+    <column id="393" parent="308" name="time">
       <Comment>上班时间</Comment>
       <DataType>varchar(50)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="385" parent="306" name="state">
+    <column id="394" parent="308" name="state">
       <DataType>int|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <key id="386" parent="306" name="PRIMARY">
+    <key id="395" parent="308" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="387" parent="307" name="id">
+    <column id="396" parent="309" name="id">
       <AutoIncrement>6</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="388" parent="307" name="uname">
+    <column id="397" parent="309" name="uname">
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="389" parent="307" name="pwd">
+    <column id="398" parent="309" name="pwd">
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="390" parent="307" name="sex">
+    <column id="399" parent="309" name="sex">
       <DataType>char(1)|0s</DataType>
       <Position>4</Position>
     </column>
-    <column id="391" parent="307" name="age">
+    <column id="400" parent="309" name="age">
       <DataType>int|0s</DataType>
       <Position>5</Position>
     </column>
-    <column id="392" parent="307" name="tel">
+    <column id="401" parent="309" name="tel">
       <DataType>char(11)|0s</DataType>
       <Position>6</Position>
-    </column>
-    <key id="393" parent="307" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="394" parent="308" name="id">
-      <AutoIncrement>14</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="395" parent="308" name="user">
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="396" parent="308" name="pass">
-      <DataType>varchar(20)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <key id="397" parent="308" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="398" parent="309" name="id">
-      <AutoIncrement>17</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="399" parent="309" name="username">
-      <DataType>varchar(30)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="400" parent="309" name="password">
-      <DataType>varchar(66)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="401" parent="309" name="money">
-      <DataType>double|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
     </column>
     <key id="402" parent="309" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1561,63 +1552,111 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Primary>1</Primary>
     </key>
     <column id="403" parent="310" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>14</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="404" parent="310" name="username">
-      <DataType>varchar(30)|0s</DataType>
+    <column id="404" parent="310" name="user">
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="405" parent="310" name="password">
-      <DataType>varchar(66)|0s</DataType>
+    <column id="405" parent="310" name="pass">
+      <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="406" parent="310" name="money">
-      <DataType>double|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
-      <Position>4</Position>
-    </column>
-    <key id="407" parent="310" name="PRIMARY">
+    <key id="406" parent="310" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="408" parent="311" name="id">
+    <column id="407" parent="311" name="id">
+      <AutoIncrement>17</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="408" parent="311" name="username">
+      <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="409" parent="311" name="password">
+      <DataType>varchar(66)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="410" parent="311" name="money">
+      <DataType>double|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <key id="411" parent="311" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="412" parent="312" name="id">
+      <AutoIncrement>12</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="413" parent="312" name="username">
+      <DataType>varchar(30)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="414" parent="312" name="password">
+      <DataType>varchar(66)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <column id="415" parent="312" name="money">
+      <DataType>double|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <Position>4</Position>
+    </column>
+    <key id="416" parent="312" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="417" parent="313" name="id">
       <AutoIncrement>4</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="409" parent="311" name="username">
+    <column id="418" parent="313" name="username">
       <Comment> 用户名</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="410" parent="311" name="password">
+    <column id="419" parent="313" name="password">
       <Comment>密码</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="411" parent="311" name="nickname">
+    <column id="420" parent="313" name="nickname">
       <Comment>昵称</Comment>
       <DataType>varchar(20)|0s</DataType>
       <Position>4</Position>
     </column>
-    <key id="412" parent="311" name="PRIMARY">
+    <key id="421" parent="313" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="413" parent="312" name="user_id">
+    <column id="422" parent="314" name="user_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="414" parent="312" name="role_id">
+    <column id="423" parent="314" name="role_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>

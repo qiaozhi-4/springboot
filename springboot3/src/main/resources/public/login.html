@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#" method="post">
+    First name: <input type="text" name="firstname"><br>
+    Last name: <input type="text" name="lastname">
+    <label for="submit">点击验证：</label>
+    <div id="captcha">
+        <input type="submit" id="submit"
+               value="登录"/>
+    </div>
+    <button type="reset" id="reset">重置
+    </button>
+</form>
+</body>
+<script src="/js/jquery-3.6.0.js"></script>
+<script src="https://static.geetest.com/v4/gt4.js"></script>
+<script>
+
+    initGeetest4({
+        captchaId: 'bb962a9d4859644b981346830e3f2172',
+        product: 'popup'
+    }, function (captchaObj) {
+        captchaObj.appendTo("#captcha"); //将验证按钮插入到宿主页面中captchaBox元素内
+        captchaObj.onReady(function(){
+            //your code
+        }).onSuccess(function(){
+            //your code
+        }).onError(function(){
+            //your code
+        })
+    })
+
+    // 这里的handler是用来处理用户极验验证结果的【函数】
+    // function validate(handler) {
+    //     let params = {
+    //         captchaId: 'bb962a9d4859644b981346830e3f2172',
+    //         product: 'float'
+    //     }
+    //     initGeetest4(params, gt => {
+    //         // 保存数据到整个DOM中，Geetest会自动调用
+    //         window.gt = gt
+    //         // 将图片增加到captcha这个<div>并显示
+    //         gt.appendTo('#captcha').onSuccess(e => {
+    //             // 用户点击检测图返回的结果
+    //             let result =
+    //                 gt.getValidate()
+    //             $.get('/validate'
+    //                 , result)
+    //                 .done(r =>
+    //                     handler(r.success)) // 成功，继续下一步
+    //                 .fail(e =>
+    //                     handler(false)) // 失败了！
+    //         })
+    //         // 这里用来触发图片显示、恢复刷新显示
+    //         $('#submit').click(() =>
+    //             gt.showBox())
+    //         $('#reset').click(() =>
+    //             gt.reset())
+    //     })
+    // }
+
+</script>
+</html>

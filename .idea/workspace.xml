@@ -5,22 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/mappers/IUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/static/head_big.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/test/java/JobTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/test/java/MybatisPlusTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot3/src/test/java/MybatisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/public/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot3/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/App4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/repository/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/repository/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/java/com/zking/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/static/head_big.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/main/resources/static/拉克丝狗年限定.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/test/java/JobTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/test/java/JpaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot4/src/test/java/RedisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/App3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot3/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot3/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +42,30 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -47,54 +77,62 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "import_schema_mapping": "<schema-mapping><databases><list><schema-mapping-item><source-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</source-data-source-id><source-path>schema/\"mydb\"</source-path><target-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</target-data-source-id><target-path>schema/\"mydb\"</target-path></schema-mapping-item></list></databases></schema-mapping>",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/user/train/java/springboot/springboot3/src/main/java/com/zking",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "16824c1ef33982c7ece8d0d251880d47"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;035e0d23-9b0c-4087-8bf1-ec901f260f80&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/\&quot;mydb\&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;035e0d23-9b0c-4087-8bf1-ec901f260f80&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/\&quot;mydb\&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/user/train/java/springboot/springboot3/src/main/resources/static&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f775537100673a88240ccca015912d3c&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static" />
+      <recent name="D:\user\train\java\springboot\springboot4\src\main\resources" />
       <recent name="D:\user\train\java\springboot\springboot3\src\main\java\com\zking" />
       <recent name="D:\user\train\java\springboot\springboot3\src\main\resources" />
       <recent name="D:\user\train\java\springboot\springboot3\src\test\java" />
-      <recent name="D:\user\train\java\springboot\springboot3\src\main\java\com\zking\controller" />
-      <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\mappers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zking.repository" />
       <recent name="" />
       <recent name="com.zking.entity" />
       <recent name="com.zking" />
       <recent name="com.zking.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.App3">
+  <component name="RunManager" selected="JUnit.JobTest.test6">
     <configuration name="JobTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot3" />
+      <module name="springboot4" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JobTest" />
       <option name="METHOD_NAME" value="test1" />
@@ -104,7 +142,7 @@
       </method>
     </configuration>
     <configuration name="JobTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot3" />
+      <module name="springboot4" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JobTest" />
       <option name="METHOD_NAME" value="test2" />
@@ -113,35 +151,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisPlusTest.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot3" />
+    <configuration name="JobTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot4" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MybatisPlusTest" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="MAIN_CLASS_NAME" value="JobTest" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisPlusTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot3" />
+    <configuration name="JobTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot4" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MybatisPlusTest" />
+      <option name="MAIN_CLASS_NAME" value="JobTest" />
       <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App3" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot3" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="JobTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JobTest" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,18 +192,18 @@
     <list>
       <item itemvalue="JUnit.JobTest.test1" />
       <item itemvalue="JUnit.JobTest.test2" />
-      <item itemvalue="JUnit.MybatisPlusTest.test4" />
-      <item itemvalue="JUnit.MybatisPlusTest.test5" />
+      <item itemvalue="JUnit.JobTest.test3" />
+      <item itemvalue="JUnit.JobTest.test5" />
+      <item itemvalue="JUnit.JobTest.test6" />
       <item itemvalue="Spring Boot.Springboot1Application" />
-      <item itemvalue="Spring Boot.App3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.App3" />
-        <item itemvalue="JUnit.JobTest.test2" />
+        <item itemvalue="JUnit.JobTest.test6" />
+        <item itemvalue="JUnit.JobTest.test5" />
         <item itemvalue="JUnit.JobTest.test1" />
-        <item itemvalue="JUnit.MybatisPlusTest.test5" />
-        <item itemvalue="JUnit.MybatisPlusTest.test4" />
+        <item itemvalue="JUnit.JobTest.test3" />
+        <item itemvalue="JUnit.JobTest.test2" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +218,9 @@
       <workItem from="1655946818888" duration="9517000" />
       <workItem from="1655956928897" duration="593000" />
       <workItem from="1655957551143" duration="54000" />
-      <workItem from="1656002967736" duration="13899000" />
+      <workItem from="1656002967736" duration="21923000" />
+      <workItem from="1656137440789" duration="11699000" />
+      <workItem from="1656205198261" duration="6319000" />
     </task>
     <task id="LOCAL-00001" summary="springboot3">
       <created>1656071493685</created>
@@ -192,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656071493685</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="springboot3">
+      <created>1656123444750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656123444750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
