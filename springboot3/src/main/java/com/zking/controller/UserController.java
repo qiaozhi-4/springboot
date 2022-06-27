@@ -25,6 +25,8 @@ import java.util.Map;
 @RestController
 //自动生成无参带参构造
 @RequiredArgsConstructor
+//标注共享的属性名
+@SessionAttributes({"validate"})
 public class UserController {
     private final IUserMapper mapper;
     private final IUserService userService;
@@ -60,7 +62,7 @@ public class UserController {
                     new HttpEntity<>(queryParams, headers);
             ResponseEntity<String> response =
                     client.exchange(url, HttpMethod.POST, requestEntity, String.class);
-            JSONObject jsonObject = new JSONObject(Integer.parseInt(response.getBody()));
+            JSONObject jsonObject = new JSONObject(response.getBody());
             // 5.根据极验返回的用户验证状态, 业务逻辑自行处理
             if ("success".equals(jsonObject.getString("result"))) {
                 // 已经验证通过，添加validate信息
@@ -85,18 +87,13 @@ public class UserController {
                                     @RequestParam("password") String password) {
         // 检查session中是否已经验证：（代码改成自己的逻辑！！！）
         if (!validate) {
-            return Result.fail("login failed: no validate info!");
+            return Result.fail("登录失败你还没有通过验证信息");
         }
         // 使用shiro正常处理登录逻辑：
         if (username.equals("admin") && password.equals("123")) {
-            return Result.success("adminlogined!");
+            return Result.success("登录成功!");
         }
-        return Result.fail(username + "login failed: " + password);
-    }
-
-    @PostMapping("login")
-    public void login() {
-
+        return Result.fail("登录失败，用户名或密码正确" );
     }
 
 

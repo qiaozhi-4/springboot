@@ -3,40 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/css/theme-chalk-2.15.7.css"/>
 </head>
 <body>
-<form action="#" method="post">
-    First name: <input type="text" name="firstname"><br>
-    Last name: <input type="text" name="lastname">
-    <label for="submit">点击验证：</label>
-    <div id="captcha">
-        <input type="submit" id="submit"
-               value="登录"/>
-    </div>
-    <button type="reset" id="reset">重置
-    </button>
-</form>
+
+<div id="app">
+
+    <el-form ref="form" :model="form" :label-width="formLabelWidth">
+
+        <el-form-item label="账号">
+            <el-input v-model="form.username"></el-input>
+        </el-form-item>
+        <el-form-item label="密码">
+            <el-input v-model="form.password" show-password></el-input>
+        </el-form-item>
+
+        <el-form-item>
+            <div id="captcha">
+                <el-button type="primary" @click="login(form)">登录</el-button>
+            </div>
+        </el-form-item>
+
+    </el-form>
+
+</div>
 </body>
 <script src="/js/jquery-3.6.0.js"></script>
 <script src="https://static.geetest.com/v4/gt4.js"></script>
+<script src="/js/vue-2.6.14.js"></script>
+<script src="/js/vue-router.js"></script>
+<script src="/js/axios-0.26.js"></script>
+<script src="/js/element-ui-2.15.7.js"></script>
 <script>
-
-    initGeetest4({
-        captchaId: 'bb962a9d4859644b981346830e3f2172',
-        product: 'popup'
-    }, function (captchaObj) {
-        captchaObj.appendTo("#captcha"); //将验证按钮插入到宿主页面中captchaBox元素内
-        captchaObj.onReady(function(){
-            //your code
-        }).onSuccess(function(){
-            //your code
-        }).onError(function(){
-            //your code
-        })
+    let boo = false
+    new Vue({
+        el: '#app',
+        data: {
+            form: {
+                username: 'admin',
+                password: '123',
+            },
+            formLabelWidth: '120px',
+        },
+        methods: {
+            login(form) {
+                if (boo) {
+                    $.post('/loginAjax', form)
+                        .done(r => {
+                            if (r.boo) {
+                                console.log("登录成功")
+                                this.open(r.info, 'success')
+                            }else {
+                                console.log("登录失败")
+                                this.open(r.info, 'warning')
+                            }
+                        }) // 成功，继续下一步
+                        .fail(e => {
+                            console.log("登录失败")
+                            this.open('登录失败', 'warning')
+                        }) // 失败了！
+                    return false
+                }
+                this.open('未通过验证', 'warning')
+                return false
+            },
+            open(message, type) {
+                this.$notify({
+                    message: message,
+                    type: type
+                });
+            },
+        },
+        mounted: function () {
+            initGeetest4({
+                captchaId: 'bb962a9d4859644b981346830e3f2172',
+                product: 'float'
+            }, function (gt) {
+                gt.appendTo("#captcha"); //将验证按钮插入到宿主页面中captchaBox元素内
+                gt.onReady(function () {
+                    //your code
+                }).onSuccess(function () {
+                    // 用户点击检测图返回的结果
+                    let result =
+                        gt.getValidate()
+                    $.get('/validate', result)
+                        .done(r => {
+                            console.log("验证成功")
+                            boo = true
+                        }) // 成功，继续下一步
+                        .fail(e => {
+                            console.log("验证失败")
+                        }) // 失败了！
+                }).onError(function () {
+                    //your code
+                })
+            })
+        }
     })
 
+
     // 这里的handler是用来处理用户极验验证结果的【函数】
-    // function validate(handler) {
+    // let code = function validate(handler) {
     //     let params = {
     //         captchaId: 'bb962a9d4859644b981346830e3f2172',
     //         product: 'float'
@@ -63,6 +130,5 @@
     //             gt.reset())
     //     })
     // }
-
 </script>
 </html>
