@@ -12,6 +12,7 @@
         <module>springboot2</module>
         <module>springboot3</module>
         <module>springboot4</module>
+        <module>springboot5</module>
     </modules>
 
     <properties>

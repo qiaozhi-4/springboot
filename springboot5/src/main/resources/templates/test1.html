@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>test1</title>
+</head>
+<body>
+
+<h2>这是test1</h2>
+<span th:text="${user}">这里不会显示</span><br>
+<span th:text="${html}"></span><br>
+<span th:utext="${html}"></span><br>
+<img src="/1.jpg" width="100">
+<img th:src="'/1.jpg'" src="../static/1.jpg" width="100">
+<h2>遍历</h2>
+<div>
+    <h3>list</h3>
+    <p th:each="e:${list}">
+        <b th:text="${e}">列表项</b>
+    </p>
+    <h3>map</h3>
+    <p th:each="kv:${map}">
+        <b><span th:text="${kv.key}"></span> =》 <span th:text="${kv.value}"></span></b>
+    </p>
+</div>
+<h2>参数拼接</h2>
+<div>
+    <a href="/t/users?id=1">a1</a>
+    <h3>参数</h3>
+    id:<span th:text="${id}"></span>
+    name:<span th:text="${name}"></span>
+</div>
+
+</body>
+</html>
