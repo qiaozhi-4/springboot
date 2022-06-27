@@ -5,8 +5,8 @@ server:
   #上下文路径
 #    context-path: /qz
 
-#thymeleaf模板配置
 spring:
+  #thymeleaf模板配置
   thymeleaf:
     cache: false
 
@@ -18,6 +18,26 @@ spring:
           content:
             enabled: true # 开启静态资源策略管理
             paths: /** # 针对的静态资源路径
+
+  # 配置JDBC
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 12345678
+
+# mybatis-plus的配置（和mybatis配置一致）
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.zking.entity
+  configuration:
+    map-underscore-to-camel-case: true # 下横线转驼峰
+
+# pagehelper配置
+pagehelper:
+  #  dialect:  # 数据库方言类型（得是类）
+  helper-dialect: mysql # 方言
+  reasonable: true # 负数默认转为第1页
 
 
 

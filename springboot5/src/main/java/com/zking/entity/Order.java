@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 //自动生成无参构造函数
 @NoArgsConstructor
 @TableName("user2")
-public class User
+public class Order
 {
     @TableId(type = IdType.AUTO)
     private Integer id;

@@ -18,7 +18,7 @@ import java.util.Map;
 @RequestMapping("/t")
 public class Controller1 {
 
-    @GetMapping({"test1", ""})
+    @GetMapping({"test1"})
     public String test1() {
 
         return "test1";

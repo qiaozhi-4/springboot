@@ -18,11 +18,6 @@
 
     <!--实际使用的依赖-->
     <dependencies>
-        <!--JPA-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-data-jpa</artifactId>-->
-<!--        </dependency>-->
 
         <!--处理JSON格式-->
         <dependency>
@@ -44,17 +39,17 @@
             <version>2.1.4</version>
         </dependency>-->
         <!--mybatis-plus依赖-->
-        <!--<dependency>
+        <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.5.2</version>
         </dependency>
-        &lt;!&ndash;分页插件依赖&ndash;&gt;
+        <!--分页插件依赖-->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>1.4.2</version>
-        </dependency>-->
+        </dependency>
         <!--mysql依赖-->
         <dependency>
             <groupId>mysql</groupId>
@@ -62,10 +57,10 @@
         </dependency>
 
         <!--redis-->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
 
         <!--web项目必须的依赖：tomcat服务器，SpringMVC一套-->
         <dependency>

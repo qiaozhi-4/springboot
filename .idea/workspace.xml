@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
+      <change afterPath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/controller/Controller2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot5/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot5/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot5/src/main/resources/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot5/src/test/java/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot5/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/controller/Controller1.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot5/src/main/java/com/zking/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot5/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot5/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +78,7 @@
     "WebServerToolWindowFactoryState": "false",
     "import_schema_mapping": "<schema-mapping><databases><list><schema-mapping-item><source-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</source-data-source-id><source-path>schema/\"mydb\"</source-path><target-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</target-data-source-id><target-path>schema/\"mydb\"</target-path></schema-mapping-item></list></databases></schema-mapping>",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/user/train/java/springboot/springboot5/src/main/resources",
+    "last_opened_file_path": "D:/user/train/java/springboot/springboot5/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,21 +101,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\user\train\java\springboot\springboot5\src\main\resources\templates" />
+      <recent name="D:\user\train\java\springboot\springboot5\src\main\java\com\zking" />
       <recent name="D:\user\train\java\springboot\springboot5\src\main\resources" />
       <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static\css" />
       <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static\js" />
-      <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static" />
-      <recent name="D:\user\train\java\springboot\springboot4\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zking.controller" />
+      <recent name="" />
       <recent name="com.zking.entity" />
       <recent name="com.zking.repository" />
-      <recent name="" />
       <recent name="com.zking" />
-      <recent name="com.zking.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -114,31 +126,31 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.App5">
-    <configuration name="JobTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JobTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot4" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="JobTest" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot5" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JobTest.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot4" />
+    <configuration name="UserTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot5" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JobTest" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JobTest.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot4" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JobTest" />
-      <option name="METHOD_NAME" value="test6" />
+      <option name="MAIN_CLASS_NAME" value="UserTest" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,8 +191,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.JobTest.test1" />
-      <item itemvalue="JUnit.JobTest.test5" />
+      <item itemvalue="JUnit.UserTest.test1" />
+      <item itemvalue="JUnit.UserTest.test2" />
       <item itemvalue="JUnit.JobTest.test6" />
       <item itemvalue="Spring Boot.Springboot1Application" />
       <item itemvalue="Spring Boot.App5" />
@@ -189,10 +201,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.App5" />
+        <item itemvalue="JUnit.UserTest.test2" />
+        <item itemvalue="JUnit.UserTest.test1" />
         <item itemvalue="Spring Boot.App3" />
         <item itemvalue="JUnit.JobTest.test6" />
-        <item itemvalue="JUnit.JobTest.test5" />
-        <item itemvalue="JUnit.JobTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +225,7 @@
       <workItem from="1656002967736" duration="21923000" />
       <workItem from="1656137440789" duration="11699000" />
       <workItem from="1656205198261" duration="21575000" />
-      <workItem from="1656289400521" duration="15760000" />
+      <workItem from="1656289400521" duration="22262000" />
     </task>
     <task id="LOCAL-00001" summary="springboot3">
       <created>1656071493685</created>
@@ -257,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656321553029</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="springboot3">
+      <created>1656327597526</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656327597526</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
