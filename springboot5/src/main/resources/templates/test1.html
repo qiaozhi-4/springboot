@@ -10,8 +10,8 @@
 <span th:text="${user}">这里不会显示</span><br>
 <span th:text="${html}"></span><br>
 <span th:utext="${html}"></span><br>
-<img src="/1.jpg" width="100">
-<img th:src="'/1.jpg'" src="../static/1.jpg" width="100">
+<img src="/img/1.jpg" width="100">
+<img th:src="'/1.jpg'" src="../static/img/1.jpg" width="100">
 <h2>遍历</h2>
 <div>
     <h3>list</h3>
@@ -30,6 +30,16 @@
     id:<span th:text="${id}"></span>
     name:<span th:text="${name}"></span>
 </div>
-
+<hr/>
+<div>使用片段1  include</div>
+<div th:include="~{fragments/footer::frag1}"></div>
+</body>
+<hr/>
+<div>使用片段2  include</div>
+<div th:insert="~{fragments/footer::frag1}"></div>
+</body>
+<hr/>
+<div>使用片段3  include</div>
+<div th:replace="~{fragments/footer::frag1}"></div>
 </body>
 </html>

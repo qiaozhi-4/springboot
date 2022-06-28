@@ -3,10 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <title>home</title>
+    <link rel="stylesheet" href="/css/theme-chalk-2.15.7.css"/>
 </head>
 <body>
 
 <h1>主页</h1>
 
+<!--<div th:text="${session.user}">还没登录</div>-->
+
+<div id="app">
+
+    <el-input v-model="fuzzyStr" placeholder="请输入内容" style="width: 140px"></el-input>
+    <el-button icon="el-icon-search" circle @click="fuzzy"></el-button>
+
+    <el-table ref="multipleTable" :data="tableData" style="width: 100%"
+              @selection-change="handleSelectionChange" v-loading="loading">
+
+        <!--多选-->
+        <el-table-column type="selection" width="55">
+        </el-table-column>
+
+        <!--数据-->
+        <el-table-column prop="id" label="订单id" width="120" sortable>
+        </el-table-column>
+        <el-table-column prop="userId" label="用户id" width="120" sortable>
+        </el-table-column>
+        <el-table-column prop="info" label="订单信息" width="180">
+        </el-table-column>
+        <el-table-column prop="address" label="订单地址" show-overflow-tooltip>
+        </el-table-column>
+        <el-table-column prop="price" label="订单价格" width="120" sortable>
+        </el-table-column>
+
+        <el-table-column label="操作">
+            <template slot-scope="scope">
+                <el-button
+                        size="mini"
+                        @click="handleEdit(scope.$index, scope.row,'修改订单')">编辑
+                </el-button>
+                <el-button
+                        size="mini"
+                        type="danger"
+                        @click="handleDelete(scope.$index, scope.row)">删除
+                </el-button>
+            </template>
+        </el-table-column>
+
+    </el-table>
+
+    <!-- 呼出表单 -->
+    <el-dialog :title="FormHead" :visible.sync="FormVisible" :close-on-click-modal="false" :show-close="false">
+
+        <el-form :model="form" ref="form" label-width="80px">
+
+            <el-form-item label="订单信息" :label-width="formLabelWidth">
+                <el-input v-model="form.info" autocomplete="off"></el-input>
+            </el-form-item>
+            <el-form-item label="订单地址" :label-width="formLabelWidth">
+                <el-input v-model="form.address" autocomplete="off"></el-input>
+            </el-form-item>
+            <el-form-item label="订单价格" :label-width="formLabelWidth">
+                <el-input v-model="form.price" autocomplete="off"></el-input>
+            </el-form-item>
+
+            <el-form-item>
+                <el-button type="primary" @click="ok('form')">确 定</el-button>
+                <el-button @click="resetForm('form')">重置</el-button>
+                <el-button @click="no('form')">取 消</el-button>
+            </el-form-item>
+
+        </el-form>
+
+    </el-dialog>
+
+    <div style="margin-top: 20px">
+        <el-button @click="toggleSelection(tableData)">反选</el-button>
+        <el-button @click="toggleSelection()">取消选择</el-button>
+        <el-button @click="order('添加订单')" type="primary">添加订单</el-button>
+
+    </div>
+
+    <el-pagination
+            background
+            layout="prev, pager, next"
+            :total="total"
+            :page-size="5"
+            @current-change="page">
+    </el-pagination>
+
+</div>
+
 </body>
+
+<script src="/js/vue-2.6.14.js"></script>
+<script src="/js/vue-router.js"></script>
+<script src="/js/axios-0.26.js"></script>
+<script src="/js/element-ui-2.15.7.js"></script>
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            /*模糊查询字段*/
+            fuzzyStr:'',
+            user: {
+                id: -1,
+                username: '',
+                money: 0.0,
+            },
+            total: 0,
+            tableData: [],
+            formLabelWidth: '120px',
+            //加载中的动态效果
+            loading: true,
+            //点击添加呼出表单
+            FormVisible: false,
+            //表单头部信息
+            FormHead: '',
+            //动作，更新还是插入
+            action: '',
+            //表单数据
+            form: {
+                id:-1,
+                info: '',
+                address: '',
+                price: 0.0,
+            },
+            //旧数据
+            oldData: {
+                info: '',
+                address: '',
+                price: 0.0,
+            },
+        },
+        methods: {
+            toggleSelection(rows) {
+                if (rows) {
+                    rows.forEach(row => {
+                        this.$refs.multipleTable.toggleRowSelection(row);
+                    });
+                } else {
+                    this.$refs.multipleTable.clearSelection();
+                }
+            },
+            handleSelectionChange(val) {
+                this.multipleSelection = val;
+            },
+            formatter(row, column) {
+                return row.address;
+            },
+
+            // 模糊
+            fuzzy(){
+                axios.get('/fuzzyOrders',{params: {str: this.fuzzyStr}})
+                    .then((response) => {
+                        this.tableData = response.data.list
+                        this.total = response.data.total
+                        this.loading = false
+                    })
+                    .catch((error) => {
+                        this.loading = false
+                        console.log(error)
+                    })
+            },
+            /* 确定添加数据 */
+            ok(formName) {
+                this.$refs[formName].validate((valid) => {
+                    if (valid) {
+                        this.FormVisible = false// 隐藏表单
+                        if (this.action == 'add') {
+                            console.log('添加');
+                            //把表单数据赋值给order
+                            const order = new URLSearchParams();
+                            order.append('info', this.form.info);
+                            order.append('address', this.form.address);
+                            order.append('price', this.form.price);
+                            //发起异步请求,传入params
+                            axios.post('/addOrder', order)
+                                .then((response) => {
+                                    if (response.data == null) {
+                                        //提示
+                                        this.$notify.error({
+                                            title: '错误',
+                                            message: '添加失败！'
+                                        });
+                                    } else {
+                                        //提示
+                                        this.$notify({
+                                            title: '成功',
+                                            message: '添加数据成功',
+                                            type: 'success'
+                                        });
+                                        //存入表格数组
+                                        this.tableData.push(response.data)
+                                    }
+                                })
+                                .catch((error) => {
+                                    //提示
+                                    this.$notify.error({
+                                        title: '错误',
+                                        message: '请求发送失败！'
+                                    });
+                                    this.loading = false
+                                    console.log(error)
+                                })
+                            //清除表单绑定的数据
+                            Object.keys(this.form).forEach(key => this.form[key] = '');
+                            this.resetForm(formName)
+                        } else if (this.action == 'update') {
+                            console.log('修改');
+                            //把表单数据赋值给order
+                            const order = new URLSearchParams();
+                            order.append('id', this.form.id);
+                            order.append('info', this.form.info);
+                            order.append('address', this.form.address);
+                            order.append('price', this.form.price);
+                            //发起异步请求,传入params
+                            axios.put('/updateOrder', order)
+                                .then((response) => {
+                                    if (response.data) {
+                                        //提示
+                                        this.$notify({
+                                            title: '成功',
+                                            message: '修改数据成功',
+                                            type: 'success'
+                                        });
+                                        //更新数据
+                                        this.oldData.info = order.get('info')
+                                        this.oldData.address = order.get('address')
+                                        this.oldData.price = order.get('price')
+                                    } else {
+                                        //提示
+                                        this.$message({
+                                            title: '警告',
+                                            message: '修改失败！',
+                                            type: 'warning',
+                                        });
+                                    }
+                                })
+                                .catch((error) => {
+                                    //提示
+                                    this.$notify.error({
+                                        title: '错误',
+                                        message: '请求发送失败！'
+                                    });
+                                    this.loading = false
+                                    console.log(error)
+                                })
+                            //清除表单绑定的数据
+                            Object.keys(this.form).forEach(key => this.form[key] = '');
+                            this.resetForm(formName)
+                        }
+                    } else {
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+            },
+            /* 取消添加数据 */
+            no(formName) {
+                this.FormVisible = false
+                //清除表单绑定的数据
+                Object.keys(this.form).forEach(key => this.form[key] = '');
+                this.resetForm(formName)
+                //提示
+                this.$notify.info({
+                    title: '消息',
+                    message: '您取消了添加'
+                });
+            },
+
+            //重置
+            resetForm(formName) {
+                this.$refs[formName].resetFields();
+            },
+
+            /*编辑*/
+            handleEdit(index, row, info) {
+                //设置表单头部信息
+                this.FormHead = info
+                //显示表单
+                this.FormVisible = true
+                //是什么请求
+                this.action = 'update'
+                //存好旧数据
+                this.oldData = row
+                //赋值到表单
+                this.form.id = row.id
+                this.form.info = row.info
+                this.form.address = row.address
+                this.form.price = row.price
+            },
+            /*删除*/
+            handleDelete(index, row) {
+                console.log(index, row);
+                axios.delete('/deleteOrder', {params: {id: row.id}})
+                    .then((response) => {
+                        this.loading = false
+                        if (response.data) {
+                            //前段删除当前行
+                            this.tableData.splice(index, 1)
+                            this.$message({
+                                message: '删除成功',
+                                type: 'success'
+                            });
+                        } else {
+                            this.$message({
+                                message: '删除失败',
+                                type: 'warning'
+                            });
+                        }
+                    })
+                    .catch((error) => {
+                        this.loading = false
+                        this.$message.error('请求失败');
+                        console.log(error)
+                    })
+            },
+
+            /* 添加数据 ----------------------------------------*/
+            order(info) {
+                //设置表单头部信息
+                this.FormHead = info
+                //显示表单
+                this.FormVisible = true
+                //是什么请求
+                this.action = 'add'
+            },
+
+            /*分页*/
+            page(val) {
+                //加载中的效果
+                this.loading = true
+                axios.get('/getOrders', {params: {pageNum: val}})
+                    .then((response) => {
+                        this.tableData = response.data.list
+                        this.total = response.data.total
+                        this.loading = false
+                    })
+                    .catch((error) => {
+                        this.loading = false
+                        console.log(error)
+                    })
+            },
+        },
+        mounted: function () {
+            axios.get('/getOrders')
+                .then((response) => {
+                    this.tableData = response.data.list
+                    this.total = response.data.total
+                    this.loading = false
+                })
+                .catch((error) => {
+                    this.loading = false
+                    console.log(error)
+                })
+        },
+    })
+</script>
+
 </html>

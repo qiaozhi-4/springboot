@@ -13,13 +13,13 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 //自动生成无参构造函数
 @NoArgsConstructor
-@TableName("user2")
-public class Order
-{
+@TableName("order2")
+public class Order {
     @TableId(type = IdType.AUTO)
     private Integer id;
-    private String username;
-    private String password;
-    private Double money;
+    private Integer userId;
+    private String info;
+    private String address;
+    private Double price;
 }
 
