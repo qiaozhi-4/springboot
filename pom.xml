@@ -13,6 +13,9 @@
         <module>springboot3</module>
         <module>springboot4</module>
         <module>springboot5</module>
+        <module>springboot6</module>
+        <module>springboot7</module>
+        <module>springboot7_job</module>
     </modules>
 
     <properties>

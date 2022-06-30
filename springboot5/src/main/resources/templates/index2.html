@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--Thymeleaf模板引擎片段复用【导入css样式】-->
+    <div th:replace="~{fragments/header::frag1}"></div>
+
+</head>
+<body>
+<div id="app">
+    <!--Thymeleaf模板引擎片段复用【导航 栏】-->
+    <div th:insert="~{fragments/header::frag2(2)}"></div>
+</div>
+
+
+<!--Thymeleaf模板引擎片段复用【导入js脚本】-->
+<script th:replace="~{fragments/footer::frag1}"></script>
+<!--<script>-->
+<!--    new Vue({-->
+<!--        el: '#app',-->
+<!--        data: {-->
+<!--            activeIndex: '1',-->
+<!--        },-->
+<!--        methods: {-->
+<!--            handleSelect(key, keyPath) {-->
+<!--                console.log(key, keyPath);-->
+<!--            }-->
+<!--        },-->
+<!--    })-->
+<!--</script>-->
+</body>
+</html>

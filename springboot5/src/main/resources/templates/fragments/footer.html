@@ -6,11 +6,43 @@
 </head>
 <body>
 
-<h2>这是footer</h2>
+<h2>这是尾部片段</h2>
 
 <div th:fragment="frag1">
-    <h3>这是尾部片段</h3>
-    <h3>名字是frag1</h3>
+    <script src="/js/vue-2.6.14.js"></script>
+    <script src="/js/vue-router.js"></script>
+    <script src="/js/axios-0.26.js"></script>
+    <script src="/js/element-ui-2.15.7.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                /*导航栏*/
+                activeIndex: '1',
+                /*文件上传*/
+                dialogImageUrl: '',
+                dialogVisible: false,
+                disabled: false
+            },
+            methods: {
+                /*导航栏*/
+                handleSelect(key, keyPath) {
+                    console.log(key, keyPath);
+                },
+                /*文件上传*/
+                handleRemove(file) {
+                    console.log(file);
+                },
+                handlePictureCardPreview(file) {
+                    this.dialogImageUrl = file.url;
+                    this.dialogVisible = true;
+                },
+                handleDownload(file) {
+                    console.log(file);
+                }
+            },
+        })
+    </script>
 </div>
 
 </body>

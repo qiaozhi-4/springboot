@@ -1,0 +1,8 @@
+1：
+2：
+3：JPA：类似mybatis
+4：模板引擎【thymeleaf】：类似el表达式，用于前端获取回话信息等
+5：模板引擎【thymeleaf】：片段的复用,RedirectAttributes参数，类似session参数，只有本次请求有效，文件上传
+6：参数验证：controller方法传参验证，比如非空，邮箱是否符合格式
+7：redis的注解切面整合，解决缓存的存入，一级异常处理和拦截器配置
+8：

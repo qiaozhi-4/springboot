@@ -1,0 +1,38 @@
+server:
+  #端口
+  port: 8081
+    #  servlet:
+  #上下文路径
+#    context-path: /qz
+
+# 配置JDBC
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 12345678
+
+  #JPA配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    show-sql: true #Debug显示sql语句
+    generate-ddl: true #生成DDL数据库定义语句
+
+  redis:
+    database: 0
+    timeout: 15000
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 1
+
+
+
+

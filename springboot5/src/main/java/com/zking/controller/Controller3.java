@@ -1,59 +1,56 @@
 package com.zking.controller;
 
-import com.zking.entity.User;
-import com.zking.service.IUserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
+import java.util.UUID;
 
 @Controller
 //自动生成无参带参构造
 @RequiredArgsConstructor
 //一级路径
-@RequestMapping
+@RequestMapping("/job05")
 public class Controller3 {
+    @Value("${upload.location}")
+    private String location;
 
-    private final IUserService userService;
-
-    //跳转注册页
-    @GetMapping("register")
-    public String register() {
-        return "register";
+    //跳转主页
+    @GetMapping("index")
+    public String index() {
+        return "index";
     }
 
-    //注册提交验证
-    @PostMapping("registerVerify")
-    public String registerVerify(String username, String password, Model model) {
-        User user = userService.register(username, password);
-        if (user == null){
-            model.addAttribute("info","注册失败");
-            return "register";
-        }
-        model.addAttribute("info","注册成功");
-        return "login";
+    //跳转主页
+    @GetMapping("index2")
+    public String index2() {
+        return "index2";
     }
 
-    //跳转登录页
-    @GetMapping({"login", ""})
-    public String login() {
-        return "login";
+    //跳转主页
+    @GetMapping("index3")
+    public String index3() {
+        return "index3";
     }
 
-    //登录提交验证
-    @PostMapping("loginVerify")
-    public String loginVerify(String username, String password, HttpSession session, Model model) {
-        User user = userService.login(username,password);
-        if (user==null){
-            model.addAttribute("info","登录失败");
-            return "login";
-        }
-        session.setAttribute("user",user);
-        model.addAttribute("info","登录成功");
-        return "home";
+    //上传图片
+    @PostMapping("updateFile")
+    public String updateFile(MultipartFile file, RedirectAttributes redirectAttributes) throws IOException {
+        //随机文件名
+        String path = "/" + UUID.randomUUID() + file.getOriginalFilename();
+        //location为配置文件配置的路径
+        File dest = new File(location, path);
+        //文件上传到准备好的文件
+        file.transferTo(dest);
+        redirectAttributes.addFlashAttribute("path", path);
+        return "redirect:index";
     }
+
 }
