@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
-      <change afterPath="$PROJECT_DIR$/springboot8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/App8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/advice/MyPropertyEditorSupport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/config/My404.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/controller/Controller2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/dto/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/css/fonts/element-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/css/fonts/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/css/theme-chalk-2.15.7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/img/拉克丝狗年限定.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/js/axios-0.26.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/js/element-ui-2.15.7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/js/vue-2.6.14.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot8/src/main/resources/static/js/vue-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot7_job/src/main/java/com/zking/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot7_job/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot7_job/src/test/java/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot7_job/src/test/java/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/说明" beforeDir="false" afterPath="$PROJECT_DIR$/说明" afterDir="false" />
-    </list>
+    <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -251,7 +223,7 @@
       <workItem from="1656459714020" duration="21459000" />
       <workItem from="1656549454857" duration="20651000" />
       <workItem from="1656578789065" duration="11416000" />
-      <workItem from="1656635203147" duration="24620000" />
+      <workItem from="1656635203147" duration="25247000" />
     </task>
     <task id="LOCAL-00001" summary="springboot3">
       <created>1656071493685</created>
@@ -330,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656593739468</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="springboot3">
+      <created>1656670210139</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656670210139</updated>
+    </task>
+    <task id="LOCAL-00013" summary="springboot3">
+      <created>1656670223397</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656670223397</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
