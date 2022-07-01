@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
 @SpringBootTest(classes = AppJob7.class) // 用于SpringBoot测试
 @RunWith(SpringRunner.class) // 用于SSM框架和SpringBoot中
 public class Test1 {
@@ -40,6 +44,9 @@ public class Test1 {
     public void test4() {
         System.out.println(userService.updateByIdUser(new User(999,"jj",null,10.0)));
     }
+
+
+
 
 
 }

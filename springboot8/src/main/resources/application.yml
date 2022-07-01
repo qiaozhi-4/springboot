@@ -1,0 +1,76 @@
+server:
+  #端口
+  port: 8081
+  #  servlet:
+  #上下文路径
+#    context-path: /qz
+
+# 自定义上传文件的文件夹位置
+upload:
+  location: D:/user/learn_xuexi/img
+
+# 配置JDBC
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 12345678
+
+    # 配置静态路径（默认为public/static路径）
+  web:
+    resources:
+      # 静态资源管理路径，这些路径下放置静态资源，可以被搜索到，配置必须以/结尾
+      static-locations: classpath:/public/, classpath:/static/, file:${upload.location}/
+      chain:
+        strategy:
+          content:
+            enabled: true # 开启静态资源策略管理
+            paths: /** # 针对的静态资源路径
+
+    # 配置静态路径（默认为public/static路径）
+  mvc:
+    # 告诉springboot什么请求路径会去【static-locations】定义的位置去找同文件名的资源
+    # static-path-pattern: /static/**
+    # 这里表示/xxx，如果没与匹配Controller时，就会去静态资源路径去找对应的文件
+    static-path-pattern: /**
+
+  redis:
+    database: 0
+    timeout: 15000
+    port: 6379
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 1
+
+# mybatis-plus的配置（和mybatis配置一致）
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml
+  type-aliases-package: com.zking.entity
+  configuration:
+    map-underscore-to-camel-case: true # 下横线转驼峰
+
+# pagehelper分页配置
+pagehelper:
+  #  dialect:  # 数据库方言类型（得是类）
+  helper-dialect: mysql # 方言
+  reasonable: false # 负数默认转为第1页
+
+
+#日志配置
+logging:
+  file:
+    path: .  #日志文件路径
+    name: mylog.log  #日志文件名
+  level:
+    root: error
+    web: error
+    com.zking: debug
+    org.mybatis: error
+
+
+
+
+

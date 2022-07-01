@@ -8,6 +8,7 @@ import com.zking.mapper.IUserMapper;
 import com.zking.service.IUserService;
 import org.springframework.cache.annotation.*;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @CacheConfig(cacheNames = "user")
@@ -23,7 +24,7 @@ public class UserService extends ServiceImpl<IUserMapper, User> implements IUser
 
     //	2) 编写分页查询，指定页码和每页数量，缓存到Redis（key可以为：数量#页码）
     @Override
-    //存入redis，如果pageNum小于0或者返回值为空就不存，也不查
+    //存入redis，如果pageNum小于0或者返回值为空就不存
     @Cacheable(key = "'page::' + #pageNum", unless  = "#pageNum < 0 || #result == null")
     public PageInfo<User> findPage(int pageNum, int pageSize) {
         System.out.println("我查询了分页");
@@ -33,14 +34,14 @@ public class UserService extends ServiceImpl<IUserMapper, User> implements IUser
 
     //  3) 编写根据方法插入新的用户并缓存，同时清空分页缓存数据
     @Override
-    //存入redis，如果返回值为空就不存，也不查
+    //存入redis，如果返回值为空就不存
     @CachePut(key = "'id::' + #user.id", unless = "#result == null")
     //删除redis的分页缓存信息
     @CacheEvict(cacheNames = "user::page", allEntries = true)
     public User addUser(User user) {
         System.out.println("我插入了数据");
         save(user);
-        return user;
+        return user.getId() != null ? user : null;
     }
 
     //	4) 编写根据ID更新用户的方法，并清空分页缓存数据
@@ -49,6 +50,8 @@ public class UserService extends ServiceImpl<IUserMapper, User> implements IUser
     @CachePut(key = "'id::' + #user.id", unless = "#result == null")
     //删除redis的分页缓存信息
     @CacheEvict(cacheNames = "user::page", allEntries = true)
+    //开启事务
+    @Transactional
     public User updateByIdUser(User user) {
         System.out.println("我更新了数据库");
         return updateById(user) ? user : null;
