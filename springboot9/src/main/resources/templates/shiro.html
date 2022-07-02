@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <meta charset="UTF-8">
+    <title>shiro</title>
+</head>
+<body>
+<h2>shiro</h2>
+<p>
+    是否验证：<span shiro:authenticated="'已经通过验证'"></span><br>
+    没有通过验证：<span shiro:notAuthenticated="'没有通过验证'"></span><br>
+    认证用户：<span shiro:notAuthenticated="'认证的记住的'"></span><br>
+    用户信息：<shiro:principal property="username"></shiro:principal><br>
+</p>
+</body>
+</html>

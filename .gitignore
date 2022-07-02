@@ -15,6 +15,9 @@ target/
 
 *.rar
 *.log
+*.gz
+*.lock
+*.data
 
 
 ### Eclipse ###

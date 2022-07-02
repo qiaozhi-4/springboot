@@ -71,10 +71,14 @@ public class MyControllerAdvice {
     }
 
 
+    //写入日志的内容拼接方法
     public void setLog(HttpServletRequest request){
-        StringBuilder stringBuilder = new StringBuilder();
+        //当前时间
         String date = new SimpleDateFormat("yyyy-MM-dd E HH:mm:ss ").format(new Date());
+        //请求路径
         String path = request.getRequestURL().toString();
+        //拼接请求参数
+        StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("{");
         //1.获取请求正文名称的枚举
         Enumeration<String> names = request.getParameterNames();
