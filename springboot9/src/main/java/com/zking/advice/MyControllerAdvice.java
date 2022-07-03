@@ -36,17 +36,24 @@ import java.util.List;
 @ControllerAdvice(annotations = {Controller.class})  // 指定被增强注解类型
 public class MyControllerAdvice {
 
-    //注解这些异常来这里处理
+    //没有授权、没有指定角色、权限
     @ExceptionHandler({UnauthorizedException.class})
-    public String handleExl(UnauthorizedException e, Model model) throws IOException {
-        model.addAttribute("error","没有权限");
+    public String authorize(UnauthorizedException e, Model model) {
+        model.addAttribute("error", "没有权限【角色】访问该页面！");
         return "error";
     }
 
-    //注解这些异常来这里处理
+    // 没有通过认证爆发的异常
     @ExceptionHandler({UnauthenticatedException.class})
-    public String handleExl(UnauthenticatedException e, Model model) throws IOException {
-        model.addAttribute("error","没有认证");
+    public String authenticate(UnauthenticatedException e, Model model) {
+        model.addAttribute("error", "必须通过验证才能访问该页面！");
+        return "error";
+    }
+
+    // 没有通过认证爆发的异常
+    @ExceptionHandler({Exception.class})
+    public String exception(UnauthenticatedException e, Model model) {
+        model.addAttribute("error", "必须通过验证才能访问该页面！");
         return "error";
     }
 

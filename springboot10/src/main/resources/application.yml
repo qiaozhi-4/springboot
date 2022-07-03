@@ -11,19 +11,19 @@ upload:
 
 # 自定义shiro属性
 shiro:
-  chain:
-    '[/data1]': authc,roles[admin]
-    '[/admin]': authc,roles[admin]
+  chain: #配置路径以及，路径需要的权限，和角色为Map
+    '[/shiro]': authc,roles[admin]
+    '[/admin/*]': authc,roles[admin]
     '[/ex]': anon
     '[/]': anon
     '[/login]': anon
     '[/logout]': logout
     '[/**]': anon
-  login-url: login
-  unauthorized-url: error1
-  success-url: success
-  hash-algorithm-name: MD5
-  hash-iterations: 2
+  login-url: / #登录的路径（当没登录时跳转的路径）
+  unauthorized-url: /403 #权限不足的路径
+  success-url: /success #登录成功的路径
+  hash-algorithm-name: MD5 #加密的方式名称
+  hash-iterations: 2 #加密的迭代次数
 
 
 

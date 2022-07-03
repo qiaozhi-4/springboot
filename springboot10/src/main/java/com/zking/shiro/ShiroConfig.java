@@ -53,6 +53,8 @@ public class ShiroConfig {
         realm.setAuthorizationCachingEnabled(true);
         //开启身份验证缓存
         realm.setAuthenticationCachingEnabled(true);
+//        realm.setAuthorizationCachingEnabled(false);
+//        realm.setAuthenticationCachingEnabled(false);
         //设置授权缓存
         realm.setAuthorizationCacheName("authorization");
         //设置身份验证缓存
@@ -81,7 +83,7 @@ public class ShiroConfig {
 
     //配置shiro管理器工厂
     @Bean
-    public ShiroFilterFactoryBean filterFactoryBeanOld(SecurityManager manager){
+    public ShiroFilterFactoryBean filterFactoryBean(SecurityManager manager){
         ShiroFilterFactoryBean filterFactoryBean = new ShiroFilterFactoryBean();
         //给工厂配置shiro管理器（也就是模型）
         filterFactoryBean.setSecurityManager(manager);

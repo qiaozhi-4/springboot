@@ -20,7 +20,7 @@ shiro:
     '[/logout]': logout
     '[/**]': anon
   login-url: login
-  unauthorized-url: error1
+  unauthorized-url: error1 #权限不足路径
   success-url: success
   hash-algorithm-name: MD5
   hash-iterations: 2
