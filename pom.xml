@@ -20,6 +20,7 @@
         <module>springboot9</module>
         <module>springboot9_1</module>
         <module>springboot10</module>
+        <module>springboot10_1</module>
     </modules>
 
     <properties>

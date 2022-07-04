@@ -53,8 +53,6 @@ public class ShiroConfig {
         realm.setAuthorizationCachingEnabled(true);
         //开启身份验证缓存
         realm.setAuthenticationCachingEnabled(true);
-//        realm.setAuthorizationCachingEnabled(false);
-//        realm.setAuthenticationCachingEnabled(false);
         //设置授权缓存
         realm.setAuthorizationCacheName("authorization");
         //设置身份验证缓存

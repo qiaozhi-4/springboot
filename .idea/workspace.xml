@@ -5,24 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
-      <change afterPath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot10/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot10/src/main/resources/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/App10_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/shiro/MyRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/shiro/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/public/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/shiro/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/css/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/css/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/css/theme-chalk-2.15.7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/img/拉克丝狗年限定.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/js/axios-0.26.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/js/element-ui-2.15.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/js/vue-2.6.14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/static/js/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/templates/shiro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot10_1/src/main/resources/templates/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/mapper/IUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/shiro/MyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/shiro/MyRealm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/shiro/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/java/com/zking/shiro/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/resources/templates/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/main/resources/templates/shiro.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/resources/templates/shiro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/main/resources/templates/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot10/src/test/java/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot10/src/test/java/Test1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot9/src/main/java/com/zking/advice/MyControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot9/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot9/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot9/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot9/src/test/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot9/src/test/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot9/src/test/java/MyInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot9/src/test/java/MyInvocationHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/说明" beforeDir="false" afterPath="$PROJECT_DIR$/说明" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +110,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;035e0d23-9b0c-4087-8bf1-ec901f260f80&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/\&quot;mydb\&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;035e0d23-9b0c-4087-8bf1-ec901f260f80&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/\&quot;mydb\&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/user/train/java/springboot/springboot10/src/main/resources/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/user/train/java/springboot/springboot10_1/src/main/resources&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -101,7 +121,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;e2349499d1f91b39f01e00fba072b144&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;666d614d4f8f3ab213b5e027fc900376&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -115,11 +135,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\user\train\java\springboot\springboot10_1\src\main\resources" />
+      <recent name="D:\user\train\java\springboot\springboot10_1\src\main\java\com\zking" />
       <recent name="D:\user\train\java\springboot\springboot10\src\main\resources\templates" />
       <recent name="D:\user\train\java\springboot\springboot10\src\main\resources" />
       <recent name="D:\user\train\java\springboot\springboot10\src\main\java\com\zking" />
-      <recent name="D:\user\train\java\springboot\springboot9\src\main\resources\templates" />
-      <recent name="D:\user\train\java\springboot\springboot9\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\user\train\java\springboot\springboot9\src\main\resources\shiro" />
@@ -142,17 +162,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test1.test3">
-    <configuration name="Main.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot9" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.App10_1">
     <configuration name="Test1.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot10" />
       <option name="PACKAGE_NAME" value="" />
@@ -196,6 +206,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="App10_1" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot10_1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App10_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Springboot1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="springboot1" />
@@ -206,19 +229,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.Test1.test3" />
-      <item itemvalue="JUnit.Main.test1" />
       <item itemvalue="JUnit.Test1.test1 (1)" />
       <item itemvalue="JUnit.Test1.test2" />
       <item itemvalue="Spring Boot.Springboot1Application" />
+      <item itemvalue="Spring Boot.App10_1" />
       <item itemvalue="Spring Boot.App10" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test1.test3" />
+        <item itemvalue="Spring Boot.App10_1" />
         <item itemvalue="Spring Boot.App10" />
+        <item itemvalue="JUnit.Test1.test3" />
         <item itemvalue="JUnit.Test1.test2" />
         <item itemvalue="JUnit.Test1.test1 (1)" />
-        <item itemvalue="JUnit.Main.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +272,9 @@
       <workItem from="1656721506809" duration="15425000" />
       <workItem from="1656741979372" duration="21838000" />
       <workItem from="1656811067690" duration="1127000" />
-      <workItem from="1656812378212" duration="2669000" />
+      <workItem from="1656812378212" duration="8249000" />
+      <workItem from="1656827368759" duration="7932000" />
+      <workItem from="1656894654449" duration="808000" />
     </task>
     <task id="LOCAL-00001" summary="springboot3">
       <created>1656071493685</created>
@@ -356,7 +381,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656765765580</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="springboot3">
+      <created>1656815191737</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1656815191737</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,12 +474,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot10/src/main/java/com/zking/shiro/MyRealm.java</url>
-          <line>50</line>
+          <line>49</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot10/src/main/java/com/zking/shiro/MyRealm.java</url>
-          <line>33</line>
+          <line>32</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -490,11 +522,55 @@
           <line>60</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/controller/Controller1.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/shiro/MyRealm.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/controller/Controller1.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/controller/Controller1.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/controller/Controller1.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/controller/Controller1.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/controller/Controller1.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/advice/MyControllerAdvice.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot10_1/src/main/java/com/zking/advice/MyControllerAdvice.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/springboot10/src/main/java/com/zking/controller/Controller1.java</url>
           <line>69</line>
           <properties class="com.zking.controller.Controller1" method="unauthorized">
-            <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="62" />
