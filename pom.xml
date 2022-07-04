@@ -21,6 +21,7 @@
         <module>springboot9_1</module>
         <module>springboot10</module>
         <module>springboot10_1</module>
+        <module>springboot12</module>
     </modules>
 
     <properties>
