@@ -16,7 +16,7 @@ target/
 *.rar
 *.log
 *.gz
-*/out
+*/out/*
 
 
 ### Eclipse ###
