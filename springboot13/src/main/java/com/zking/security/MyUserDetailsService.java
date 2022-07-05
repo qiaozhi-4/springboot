@@ -9,9 +9,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
-import java.util.HashSet;
-
 @RequiredArgsConstructor
 @Service
 public class MyUserDetailsService implements UserDetailsService {
@@ -26,7 +23,7 @@ public class MyUserDetailsService implements UserDetailsService {
         //查询数据库
         String name = username.equals("admin") ? "admin" : "test";
         String password = encoder.encode("123");
-        String authorities = username.equals("admin") ? "admin,delete,insert" : "insert";
+        String authorities = username.equals("admin") ? "admin,delete,insert" : "insert,ROLE_user";
 //        Collection<GrantedAuthority> authorities = AuthorityUtils
 //                .commaSeparatedStringToAuthorityList("admin,delete,insert");
         return new User(

@@ -6,6 +6,6 @@
 </head>
 <body>
 <h2>index</h2>
-<p>用户信息：[[${#session.getAttribute('SPRING_SECURITY_CONTEXT')}]]</p>
+<p>用户信息：<span th:text="${#session} != null ? ${#session.getAttribute('SPRING_SECURITY_CONTEXT')} : '没登录'"></span></p>
 </body>
 </html>

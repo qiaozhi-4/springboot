@@ -22,6 +22,8 @@
         <module>springboot10</module>
         <module>springboot10_1</module>
         <module>springboot12</module>
+        <module>springboot13</module>
+        <module>springboot13_job</module>
     </modules>
 
     <properties>

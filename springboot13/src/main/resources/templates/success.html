@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>登录成功页</title>
+</head>
+<body>
+<h2>登录成功</h2>
+<form action="/logout" method="post">
+    <button type="submit">点击登出</button>
+    CSRF:<input type="text" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"><br>
+</form>
+<div>
+    <p>登录用户：<span th:text="${user}"></span></p>
+    <div th:if="${#authentication.authenticated}">
+        <p>已经登录的用户名：<span th:text="${#authentication.name}"></span></p>
+        <hr/>
+<!--        <p>所有权限：<th:block sec:authentication="principal.authorities"/></p>-->
+        <hr/>
+        <p>所有权限：<span th:text="${#authentication.authorities}"></span></p>
+        <p>Details信息：<span th:text="${#authentication.details}"></span></p>
+        <p>Session凭证：<span th:text="${#authentication.credentials}"></span></p>
+        <p>主题信息：<span th:text="${#authentication.principal}"></span></p>
+    </div>
+</div>
+</body>
+</html>

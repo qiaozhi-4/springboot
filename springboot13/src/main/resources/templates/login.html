@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${param.error}">登录失败</div><br>
+<div th:if="${param.logout}">退出登录</div><br>
+<form action="/login" method="post">
+    Username: <input value="admin" type="text" name="username"><br>
+    Password: <input value="123" type="password" name="password"><br>
+    CSRF:<input type="text" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"><br>
+    <input type="checkbox" name="remember-me">记住我<br>
+    <input type="submit" value="登录"><br>
+</form>
+
+</body>
+</html>
