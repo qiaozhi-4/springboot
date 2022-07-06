@@ -28,8 +28,17 @@ upload:
 
 
 
-# 配置JDBC
 spring:
+    # 配置JDBC
+    # 配置静态路径（默认为public/static路径）
+  mvc:
+    # 告诉springboot什么请求路径会去【static-locations】定义的位置去找同文件名的资源
+    # static-path-pattern: /static/**
+    # 这里表示/xxx，如果没与匹配Controller时，就会去静态资源路径去找对应的文件
+    static-path-pattern: /**
+
+
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/mydb
@@ -47,12 +56,6 @@ spring:
             enabled: true # 开启静态资源策略管理
             paths: /** # 针对的静态资源路径
 
-    # 配置静态路径（默认为public/static路径）
-  mvc:
-    # 告诉springboot什么请求路径会去【static-locations】定义的位置去找同文件名的资源
-    # static-path-pattern: /static/**
-    # 这里表示/xxx，如果没与匹配Controller时，就会去静态资源路径去找对应的文件
-    static-path-pattern: /**
 
   redis:
     database: 0
@@ -69,6 +72,36 @@ spring:
     user:
       password: 123
       name: admin
+    oauth2:
+      client:
+        registration:
+          #          github:
+          #            client-id: ${clientId}
+          #            client-secret: ${clientSecret}
+          #            redirect-uri: '{baseUrl}/login/oauth2/{registrationId}'
+          #            client-authentication-method: POST
+          #            scope: read:user
+          #            client-name: GitHub
+          gitee:
+            provider: gitee
+            client-id: 2694c10f42c9d33d9257e5693bcd5183506ee62e5b00396e13e8e5b80d882048
+            client-secret: 6d046cc842f9e1924566d1c16e46350f4968354a98f339784ef6395bd6577f4d
+            authorization-grant-type: authorization_code
+            redirect-uri: http://localhost:8081/getCode
+            client-authentication-method: POST
+            scope: user_info
+            client-name: Gitee
+        provider:
+          gitee:
+            authorization-uri: https://gitee.com/oauth/authorize
+            token-uri: https://gitee.com/oauth/token
+            user-name-attribute: id
+            user-info-uri: https://gitee.com/api/v5/user
+    #          github:
+    #            authorization-uri: https://github.com/login/oauth/authorize
+    #            token-uri: https://github.com/login/oauth/access_token
+    #            user-name-attribute: id
+    #            user-info-uri: https://api.github.com/user
 
 
 # mybatis-plus的配置（和mybatis配置一致）

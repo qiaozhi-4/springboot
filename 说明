@@ -16,3 +16,5 @@
 12.Security登录认证(未完成)
 13.Security登录认证
 13_job.Security登录认证,登录认证注解，拉取第三方登录
+14.json注解，监听事件，异步请求，定时任务，bean的配置条件
+14_job.配置security登录验证，拉取第三方登录

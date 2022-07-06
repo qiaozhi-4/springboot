@@ -1004,253 +1004,272 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="293" parent="274" name="hibernate_sequence">
+    <table id="293" parent="274" name="gitee">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="294" parent="274" name="order2">
+    <table id="294" parent="274" name="hibernate_sequence">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="295" parent="274" name="perm">
+    <table id="295" parent="274" name="order2">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="296" parent="274" name="persistent_logins">
+    <table id="296" parent="274" name="perm">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="297" parent="274" name="role">
+    <table id="297" parent="274" name="persistent_logins">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="298" parent="274" name="role_user">
+    <table id="298" parent="274" name="role">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="299" parent="274" name="student1">
+    <table id="299" parent="274" name="role_user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="300" parent="274" name="user1">
+    <table id="300" parent="274" name="student1">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="301" parent="274" name="user2">
+    <table id="301" parent="274" name="user1">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="302" parent="291" name="id">
+    <table id="302" parent="274" name="user2">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="303" parent="291" name="id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="303" parent="291" name="name">
+    <column id="304" parent="291" name="name">
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="304" parent="291" name="description">
+    <column id="305" parent="291" name="description">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <key id="305" parent="291" name="PRIMARY">
+    <key id="306" parent="291" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="306" parent="292" name="authority_id">
+    <column id="307" parent="292" name="authority_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="307" parent="292" name="role_id">
+    <column id="308" parent="292" name="role_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="308" parent="293" name="next_val">
+    <column id="309" parent="293" name="id">
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="310" parent="293" name="user_id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <key id="311" parent="293" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="312" parent="294" name="next_val">
       <DataType>bigint|0s</DataType>
       <Position>1</Position>
     </column>
-    <column id="309" parent="294" name="id">
+    <column id="313" parent="295" name="id">
       <AutoIncrement>33</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="310" parent="294" name="user_id">
+    <column id="314" parent="295" name="user_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="311" parent="294" name="info">
+    <column id="315" parent="295" name="info">
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="312" parent="294" name="address">
+    <column id="316" parent="295" name="address">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="313" parent="294" name="price">
+    <column id="317" parent="295" name="price">
       <DataType>double|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>5</Position>
-    </column>
-    <key id="314" parent="294" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
-    <column id="315" parent="295" name="id">
-      <AutoIncrement>1</AutoIncrement>
-      <DataType>int|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="316" parent="295" name="perm_name">
-      <Comment>权限名称</Comment>
-      <DataType>varchar(30)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="317" parent="295" name="description">
-      <Comment>描述</Comment>
-      <DataType>varchar(255)|0s</DataType>
-      <Position>3</Position>
     </column>
     <key id="318" parent="295" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="319" parent="296" name="username">
+    <column id="319" parent="296" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="320" parent="296" name="perm_name">
+      <Comment>权限名称</Comment>
+      <DataType>varchar(30)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="321" parent="296" name="description">
+      <Comment>描述</Comment>
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+    </column>
+    <key id="322" parent="296" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <column id="323" parent="297" name="username">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="320" parent="296" name="series">
+    <column id="324" parent="297" name="series">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="321" parent="296" name="token">
+    <column id="325" parent="297" name="token">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="322" parent="296" name="last_used">
+    <column id="326" parent="297" name="last_used">
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="323" parent="296" name="PRIMARY">
+    <key id="327" parent="297" name="PRIMARY">
       <ColNames>series</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="324" parent="297" name="id">
+    <column id="328" parent="298" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="325" parent="297" name="name">
+    <column id="329" parent="298" name="name">
       <Comment>角色名</Comment>
       <DataType>varchar(30)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="326" parent="297" name="description">
+    <column id="330" parent="298" name="description">
       <Comment>描述</Comment>
       <DataType>varchar(255)|0s</DataType>
       <Position>3</Position>
     </column>
-    <key id="327" parent="297" name="PRIMARY">
+    <key id="331" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="328" parent="298" name="role_id">
+    <column id="332" parent="299" name="role_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="329" parent="298" name="user_id">
+    <column id="333" parent="299" name="user_id">
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="330" parent="299" name="id">
+    <column id="334" parent="300" name="id">
       <AutoIncrement>22</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="331" parent="299" name="name">
+    <column id="335" parent="300" name="name">
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="332" parent="299" name="age">
+    <column id="336" parent="300" name="age">
       <DataType>int|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <Position>3</Position>
     </column>
-    <key id="333" parent="299" name="PRIMARY">
+    <key id="337" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="334" parent="300" name="id">
+    <column id="338" parent="301" name="id">
       <AutoIncrement>17</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="335" parent="300" name="username">
+    <column id="339" parent="301" name="username">
       <DataType>varchar(30)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="336" parent="300" name="password">
+    <column id="340" parent="301" name="password">
       <DataType>varchar(66)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="337" parent="300" name="money">
+    <column id="341" parent="301" name="money">
       <DataType>double|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <key id="338" parent="300" name="PRIMARY">
+    <key id="342" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
     </key>
-    <column id="339" parent="301" name="id">
+    <column id="343" parent="302" name="id">
       <AutoIncrement>33</AutoIncrement>
       <DataType>int|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="340" parent="301" name="username">
+    <column id="344" parent="302" name="username">
       <DataType>varchar(30)|0s</DataType>
       <Position>2</Position>
     </column>
-    <column id="341" parent="301" name="password">
+    <column id="345" parent="302" name="password">
       <DataType>varchar(66)|0s</DataType>
       <Position>3</Position>
     </column>
-    <column id="342" parent="301" name="money">
+    <column id="346" parent="302" name="money">
       <DataType>double|0s</DataType>
       <DefaultExpression>0</DefaultExpression>
       <Position>4</Position>
     </column>
-    <key id="343" parent="301" name="PRIMARY">
+    <key id="347" parent="302" name="PRIMARY">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>

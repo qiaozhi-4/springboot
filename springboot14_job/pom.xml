@@ -100,6 +100,12 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
 
+        <!--  Spring Security 结合 OAuth2 实现第三方登录-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-oauth2-client</artifactId>
+        </dependency>
+
         <!--web项目必须的依赖：tomcat服务器，SpringMVC一套-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

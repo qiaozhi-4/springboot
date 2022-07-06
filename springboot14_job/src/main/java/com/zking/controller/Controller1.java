@@ -47,15 +47,6 @@ public class Controller1 {
         return "403";
     }
 
-
-//    @DenyAll 拒绝访问
-//    @PermitAll 允许访问
-//    @RolesAllowed == @Secured 安全认证，设置角色
-//    @PreAuthorize 支持spEL表达式，类似@Secured注解，进入方法之前验证授权
-//    @PostAuthorize 支持spEL表达式，检查授权方法之后才被执行
-//    @PreFilter 在方法执行之前执行，可调用使用方法的参数
-//    @PostFilter 在方法执行之后执行，可调用使用方法的返回值
-
     //不需要任何权限
     @GetMapping("/t1")
     public String test1(HttpSession session, Model model) {

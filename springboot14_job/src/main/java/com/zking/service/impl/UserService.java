@@ -9,6 +9,7 @@ import com.zking.mapper.IRoleMapper;
 import com.zking.mapper.IUserMapper;
 import com.zking.service.IUserService;
 import lombok.RequiredArgsConstructor;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,4 +33,9 @@ public class UserService extends ServiceImpl<IUserMapper, User> implements IUser
     public List<Authority> getAuthoritySByUserId(int id) {
         return authorityMapper.getAuthoritySByUserId(id);
     }
+
+
+
+
+
 }
