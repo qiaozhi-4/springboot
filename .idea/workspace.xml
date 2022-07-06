@@ -5,77 +5,96 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
-      <change afterPath="$PROJECT_DIR$/springboot13/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/App13.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/security/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/public/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/css/fonts/element-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/css/fonts/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/css/theme-chalk-2.15.7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/img/拉克丝狗年限定.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/js/axios-0.26.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/js/element-ui-2.15.7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/js/vue-2.6.14.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/static/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/templates/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13/src/main/resources/templates/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/App13_job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/entity/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/mapper/IAuthorityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/mapper/IRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/security/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/mappers/AuthorityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/mappers/RoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/public/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/css/fonts/element-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/css/fonts/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/css/theme-chalk-2.15.7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/img/拉克丝狗年限定.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/js/axios-0.26.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/js/element-ui-2.15.7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/js/vue-2.6.14.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/static/js/vue-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot13_job/src/test/java/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soringboot14/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soringboot14/src/main/java/com/zking/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/controller/Controller2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/entity/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot13_job/src/test/java/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/App14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/entity/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/entity/JsonUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/mapper/IAuthorityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/mapper/IRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/security/IsUserWithInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/security/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/service/impl/TestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/mappers/AuthorityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/mappers/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/public/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/css/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/css/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/css/theme-chalk-2.15.7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/img/拉克丝狗年限定.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/js/axios-0.26.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/js/element-ui-2.15.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/js/vue-2.6.14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/static/js/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14/src/test/java/TestJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/App14_job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/advice/MyControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/config/MyConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/controller/Controller2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/entity/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/entity/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/mapper/IAuthorityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/mapper/IRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/mapper/IUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/security/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/java/com/zking/service/impl/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/mappers/AuthorityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/mappers/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/public/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/css/fonts/element-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/css/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/css/theme-chalk-2.15.7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/img/拉克丝狗年限定.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/js/axios-0.26.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/js/element-ui-2.15.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/js/jquery-3.6.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/js/vue-2.6.14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/static/js/vue-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/templates/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot14_job/src/main/resources/templates/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/035e0d23-9b0c-4087-8bf1-ec901f260f80.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot12/src/main/java/com/zking/security/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot12/src/main/java/com/zking/security/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot12/src/main/java/com/zking/security/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot12/src/main/java/com/zking/security/MyUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot12/src/main/resources/public/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot12/src/main/resources/public/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot12/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot12/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot13_job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot13_job/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/controller/Controller1.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/controller/Controller1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/security/MyUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/security/MyUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot13_job/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/说明" beforeDir="false" afterPath="$PROJECT_DIR$/说明" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +107,7 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -129,6 +149,7 @@
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -143,7 +164,7 @@
     "WebServerToolWindowFactoryState": "false",
     "import_schema_mapping": "<schema-mapping><databases><list><schema-mapping-item><source-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</source-data-source-id><source-path>schema/\"mydb\"</source-path><target-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</target-data-source-id><target-path>schema/\"mydb\"</target-path></schema-mapping-item></list></databases></schema-mapping>",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/user/train/java/springboot/springboot13_job/src/main/resources/mappers",
+    "last_opened_file_path": "D:/user/train/java/springboot/springboot14_job/src/main/java/com/zking",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -154,7 +175,7 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
     "show.run.dashboard.notification": "false",
-    "spring.configuration.checksum": "2f62b241ac8504e7a71122c242bae858",
+    "spring.configuration.checksum": "316ce6defd40b54dae99214500a1e2ab",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -168,11 +189,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\user\train\java\springboot\springboot13_job\src\main\resources\mappers" />
-      <recent name="D:\user\train\java\springboot\springboot13_job\src\main\java\com\zking" />
-      <recent name="D:\user\train\java\springboot\springboot13_job\src\main\resources" />
-      <recent name="D:\user\train\java\springboot\springboot13\src\main\java\com\zking" />
-      <recent name="D:\user\train\java\springboot\springboot13\src\main\resources" />
+      <recent name="D:\user\train\java\springboot\springboot14_job\src\main\java\com\zking" />
+      <recent name="D:\user\train\java\springboot\springboot14_job\src\main\resources" />
+      <recent name="D:\user\train\java\springboot\springboot14\src\main\java\com\zking" />
+      <recent name="D:\user\train\java\springboot\springboot14\src\main\resources" />
+      <recent name="D:\user\train\java\springboot\springboot13_job\src\main\java\com\zking\privider" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\user\train\java\springboot\springboot13\src\main\resources\templates" />
@@ -182,11 +203,11 @@
       <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zking" />
+      <recent name="com.zking.controller" />
       <recent name="" />
       <recent name="com.zking.service.impl" />
       <recent name="com.zking.service" />
-      <recent name="com.zking.mapper" />
-      <recent name="com.zking.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -196,40 +217,30 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.App13_job">
-    <configuration name="Test1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot13_job" />
+  <component name="RunManager" selected="Spring Boot.App14_job">
+    <configuration name="TestJson.t1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot14" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test1" />
+      <option name="MAIN_CLASS_NAME" value="TestJson" />
+      <option name="METHOD_NAME" value="t1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJson.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot14" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJson" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="App13_job" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot13_job" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test1" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springboot13_job" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test1" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App13" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot13" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App13" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App13_job" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zking.*" />
@@ -240,9 +251,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App13_job" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springboot13_job" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App13_job" />
+    <configuration name="App14" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot14" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App14" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App14_job" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot14_job" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zking.App14_job" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zking.*" />
@@ -262,20 +286,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Test1.test1" />
-      <item itemvalue="JUnit.Test1.test3" />
-      <item itemvalue="JUnit.Test1.test2" />
+      <item itemvalue="JUnit.TestJson.t1" />
+      <item itemvalue="JUnit.TestJson.test1" />
       <item itemvalue="Spring Boot.Springboot1Application" />
-      <item itemvalue="Spring Boot.App13" />
+      <item itemvalue="Spring Boot.App14_job" />
+      <item itemvalue="Spring Boot.App14" />
       <item itemvalue="Spring Boot.App13_job" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.App14_job" />
+        <item itemvalue="Spring Boot.App14" />
         <item itemvalue="Spring Boot.App13_job" />
-        <item itemvalue="JUnit.Test1.test3" />
-        <item itemvalue="JUnit.Test1.test2" />
-        <item itemvalue="JUnit.Test1.test1" />
-        <item itemvalue="Spring Boot.App13" />
+        <item itemvalue="JUnit.TestJson.test1" />
+        <item itemvalue="JUnit.TestJson.t1" />
       </list>
     </recent_temporary>
   </component>
@@ -309,7 +333,10 @@
       <workItem from="1656812378212" duration="8249000" />
       <workItem from="1656827368759" duration="7932000" />
       <workItem from="1656894654449" duration="12976000" />
-      <workItem from="1656976196376" duration="27660000" />
+      <workItem from="1656976196376" duration="35998000" />
+      <workItem from="1657024573653" duration="8730000" />
+      <workItem from="1657062209189" duration="14222000" />
+      <workItem from="1657086543172" duration="5481000" />
     </task>
     <task id="LOCAL-00001" summary="springboot3">
       <created>1656071493685</created>
@@ -444,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656926988391</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="springboot3">
+      <created>1657012057902</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657012057902</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -629,9 +663,14 @@
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/advice/MyControllerAdvice.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="82" />
+          <url>file://$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/security/MyUserDetailsService.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot13_job/src/main/java/com/zking/controller/Controller2.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/springboot10/src/main/java/com/zking/controller/Controller1.java</url>

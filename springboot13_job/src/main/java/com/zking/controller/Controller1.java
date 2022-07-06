@@ -1,10 +1,14 @@
 package com.zking.controller;
 
-import org.springframework.security.access.annotation.Secured;
+import com.zking.entity.User;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.security.DenyAll;
 import javax.annotation.security.PermitAll;
@@ -14,8 +18,8 @@ import javax.servlet.http.HttpSession;
 //注释这个类下所有映射路径都能直接访问
 @PermitAll
 @Controller
+@RequiredArgsConstructor
 public class Controller1 {
-
 
     //主页
     @GetMapping
@@ -25,7 +29,7 @@ public class Controller1 {
 
     //登录页
     @GetMapping("login.html")
-    public String login() {
+    public String login(HttpSession session) {
         return "login";
     }
 
@@ -81,7 +85,7 @@ public class Controller1 {
         return "test";
     }
 
-    //需要指定角色
+    //需要指定角色hasRole
     @RolesAllowed({"user"})
     @GetMapping("/t33")
     public String test33(HttpSession session, Model model) {

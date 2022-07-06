@@ -13,5 +13,6 @@
 9.shiro的整合，Proxy代理接口创建对象
 10.shiro整合作业（自己的整理）
 10_1.shiro支持注解
-12.
+12.Security登录认证(未完成)
 13.Security登录认证
+13_job.Security登录认证,登录认证注解，拉取第三方登录
