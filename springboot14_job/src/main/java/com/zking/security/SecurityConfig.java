@@ -56,7 +56,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.oauth2Login()
                 .redirectionEndpoint()
-                .baseUri("/getCode") // 和配置相 匹配
+                .baseUri("/login/gitee") // 和配置相 匹配
                 .and()
                 .userInfoEndpoint(u -> u.userService(oauth2UserService()));
         // 2. 转换请求

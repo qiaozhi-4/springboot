@@ -96,8 +96,7 @@ public class GitOAuth2User implements OAuth2User, Serializable {
     }
 
     @Override
-    public Collection<? extends
-            GrantedAuthority> getAuthorities() {
+    public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
     }
 }

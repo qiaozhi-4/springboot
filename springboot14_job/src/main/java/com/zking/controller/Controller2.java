@@ -15,6 +15,7 @@ import org.springframework.security.oauth2.client.registration.ClientRegistratio
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.client.RestTemplate;
 
@@ -27,10 +28,12 @@ import javax.annotation.security.PermitAll;
 @RequestMapping
 public class Controller2 {
 
+    private final IUserService userService;
     private final RestTemplate restTemplate;
     private final PasswordEncoder encoder;
 
-    @RequestMapping("/getCode")
+
+    @RequestMapping("/login/gitee")
     public String auth(Model model,
                        @RegisteredOAuth2AuthorizedClient("gitee") OAuth2AuthorizedClient client,
                        @AuthenticationPrincipal OAuth2User user) {
@@ -44,9 +47,22 @@ public class Controller2 {
 // 详细信息（自定义类）
         GitOAuth2User giteeUser = (GitOAuth2User) user;
         model.addAttribute("username", giteeUser.getLogin());
+
+        System.out.println(giteeUser.getLogin());
+        System.out.println(giteeUser.getName());
+        System.out.println(giteeUser.getId());
         return "success";
     }
 
+
+
+    @GetMapping("/loginGitee")
+    public String loginGitee(){
+        return "redirect:https://gitee.com/oauth/authorize?" +
+                "client_id=2694c10f42c9d33d9257e5693bcd5183506ee62e5b00396e13e8e5b80d882048&" +
+                "redirect_uri=http%3A%2F%2Flocalhost%3A8081%2FgetCode&" +
+                "response_type=code";
+    }
     //回调路径
 //    @RequestMapping("/getCode")
     public String getCode(String code){
