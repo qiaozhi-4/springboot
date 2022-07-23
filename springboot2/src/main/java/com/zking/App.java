@@ -1,6 +1,7 @@
 package com.zking;
 
 import com.zking.entity.User;
+import de.codecentric.boot.admin.server.config.EnableAdminServer;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +19,9 @@ import java.util.List;
 @RequestMapping
 @ConfigurationProperties(prefix = "test.jdbc")
 @Getter @Setter
+
+//健康检测
+@EnableAdminServer
 public class App {
     private List<User> users;
 

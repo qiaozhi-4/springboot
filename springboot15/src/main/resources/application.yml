@@ -1,0 +1,66 @@
+server:
+  #端口
+  port: 8081
+  #  servlet:
+  #上下文路径
+#    context-path: /qz
+
+logging:
+  level:
+    root: info
+    com.zking: debug
+
+
+
+my:
+  name:张三
+
+
+
+# ------健康检测
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' # 开放所有的健康检测断点API
+  endpoint:
+     shutdown:
+       enabled: true # 支持使用API请求关机
+  info:
+    java:
+      enabled: true # 可以访问服务器JVM相关信息
+
+--- #定义
+spring:
+  profiles.active: dev
+#  application:
+#    name: app15
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8081
+
+
+--- #定义
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+server:
+  #端口
+  port: 9000
+
+
+--- #定义
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+server:
+  #端口
+  port: 9200
+
+
+

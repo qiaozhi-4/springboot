@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <textarea id="msg" cols="10">暂时没有消息</textarea>
+    <br/>
+    <input id="content" type="text">
+    <button id="send">发消息</button>
+</div>
+
+<script src="/jquery-3.6.0.js"></script>
+<script>
+    let ws = new WebSocket("ws://localhost:9000/ws/6666")
+    let text = document.querySelector('#msg')
+    let send = document.querySelector('#send')
+    let content = document.querySelector('#content')
+    ws.onopen = msg => console.log(msg)
+    ws.onerror = err => console.log(err)
+    ws.onclose = _ => console.log('关闭ws')
+    ws.onmessage = msg => text.append(msg.data)
+
+    window.onbeforeunload = _ => ws.close()
+
+    send.onclick = e =>ws.send(content.value)
+</script>
+
+</body>
+</html>
