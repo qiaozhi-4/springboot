@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8bfc4cf-6590-4e9e-abe0-8a17e53f5c2b" name="Changes" comment="springboot3">
+      <change afterPath="$PROJECT_DIR$/springboot15/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot15/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot15/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/说明" beforeDir="false" afterPath="$PROJECT_DIR$/说明" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +53,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -61,56 +67,56 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;import_schema_mapping&quot;: &quot;&lt;schema-mapping&gt;&lt;databases&gt;&lt;list&gt;&lt;schema-mapping-item&gt;&lt;source-data-source-id&gt;035e0d23-9b0c-4087-8bf1-ec901f260f80&lt;/source-data-source-id&gt;&lt;source-path&gt;schema/\&quot;mydb\&quot;&lt;/source-path&gt;&lt;target-data-source-id&gt;035e0d23-9b0c-4087-8bf1-ec901f260f80&lt;/target-data-source-id&gt;&lt;target-path&gt;schema/\&quot;mydb\&quot;&lt;/target-path&gt;&lt;/schema-mapping-item&gt;&lt;/list&gt;&lt;/databases&gt;&lt;/schema-mapping&gt;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/user/train/java/springboot/springboot15/src/main/resources/static/js&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;,
-    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;f8dbe7cb09acb626a6854d7c10fc668b&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "import_schema_mapping": "<schema-mapping><databases><list><schema-mapping-item><source-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</source-data-source-id><source-path>schema/\"mydb\"</source-path><target-data-source-id>035e0d23-9b0c-4087-8bf1-ec901f260f80</target-data-source-id><target-path>schema/\"mydb\"</target-path></schema-mapping-item></list></databases></schema-mapping>",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/user/train/java/springboot/springboot15/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "DockerRegistry",
+    "show.run.dashboard.notification": "false",
+    "spring.configuration.checksum": "f8dbe7cb09acb626a6854d7c10fc668b",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\user\train\java\springboot\springboot15\src\main\resources\static\js" />
       <recent name="D:\user\train\java\springboot\springboot15\src\main\resources" />
+      <recent name="D:\user\train\java\springboot\springboot15\src\main\resources\static\js" />
       <recent name="D:\user\train\java\springboot\springboot14_job\src\main\java\com\zking\entity" />
       <recent name="D:\user\train\java\springboot\springboot14_job\src\main\resources\mappers" />
       <recent name="D:\user\train\java\springboot\springboot14_job\src\main\java\com\zking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\user\train\java\springboot\springboot15" />
       <recent name="D:\user\train\java\springboot\springboot13\src\main\resources\templates" />
       <recent name="D:\user\train\java\springboot\springboot9\src\main\resources\shiro" />
       <recent name="D:\user\train\java\springboot\springboot9\src\main\resources\templates" />
       <recent name="D:\user\train\java\springboot\springboot5\src\main\resources\static\img" />
-      <recent name="D:\user\train\java\springboot\springboot3\src\main\resources\static\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zking" />
@@ -260,7 +266,7 @@
       <workItem from="1658371144024" duration="1047000" />
       <workItem from="1658538230792" duration="12026000" />
       <workItem from="1658588023775" duration="48000" />
-      <workItem from="1658706716695" duration="84000" />
+      <workItem from="1658706716695" duration="6703000" />
     </task>
     <task id="LOCAL-00001" summary="springboot3">
       <created>1656071493685</created>
@@ -430,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658588051197</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="springboot3">
+      <created>1658708486434</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1658708486434</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

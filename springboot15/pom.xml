@@ -71,7 +71,7 @@
                 <configuration>
 
                     <!--这是主类-->
-                    <mainClass>com.zking.App16</mainClass>
+                    <mainClass>com.zking.App15</mainClass>
                     <!--其他配置；比如名字，镜像-->
                     <finalName>app</finalName>
                 </configuration>
@@ -85,6 +85,31 @@
                 </executions>
             </plugin>
 
+
+            <!--打包为Docker 镜像-->
+            <!--打包成docker镜像插件-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>1.4.13</version>
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <goals>
+                            <goal>build</goal>
+<!--                            <goal>push</goal>-->
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <dockerfile>Dockerfile</dockerfile>
+                    <repository>test/${project.artifactId}</repository>
+                    <tag>${project.version}</tag>
+                    <buildArgs>
+                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+                    </buildArgs>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
